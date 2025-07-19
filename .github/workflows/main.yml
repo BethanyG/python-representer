@@ -16,7 +16,7 @@ on:
       - "**.md"
 jobs:
   test:
-    name: Test Representer
+    name: Test Python Representer
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout code
