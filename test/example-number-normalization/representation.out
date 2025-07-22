@@ -590,8 +590,7 @@ Module(
       lineno=19,
       col_offset=0,
       end_lineno=19,
-      end_col_offset=68)],
-  [])
+      end_col_offset=68)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -1164,6 +1163,5 @@ Module(
       lineno=19,
       col_offset=0,
       end_lineno=19,
-      end_col_offset=68)],
-  [])
+      end_col_offset=68)])
 ## END NORMALIZED TREE ##
