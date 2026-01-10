@@ -8,5 +8,22 @@
     "placeholder_6": "MULTI_LINE_CONSTANT",
     "placeholder_7": "adjective_to_verb",
     "placeholder_8": "sentence",
-    "placeholder_9": "index"
+    "placeholder_9": "index",
+    "placeholder_10": "function_with_doctest",
+    "placeholder_11": "results",
+    "placeholder_12": "row",
+    "placeholder_13": "tournament_stats",
+    "placeholder_14": "date",
+    "placeholder_15": "__slots__",
+    "placeholder_16": "__new__",
+    "placeholder_17": "cls",
+    "placeholder_18": "year",
+    "placeholder_19": "month",
+    "placeholder_20": "day",
+    "placeholder_21": "_hashcode",
+    "placeholder_22": "only_a_docstring",
+    "placeholder_23": "docstringOny",
+    "placeholder_24": "docstringPlusmethod",
+    "placeholder_25": "docstring_only_method",
+    "placeholder_26": "docstring_plus_ellipsis"
 }
