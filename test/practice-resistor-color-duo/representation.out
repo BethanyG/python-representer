@@ -113,10 +113,7 @@ Module(
             lineno=15,
             col_offset=10,
             end_lineno=15,
-            end_col_offset=16)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=16)]),
       [
         Return(
           BinOp(
@@ -163,7 +160,6 @@ Module(
                     col_offset=29,
                     end_lineno=16,
                     end_col_offset=38)],
-                [],
                 lineno=16,
                 col_offset=16,
                 end_lineno=16,
@@ -208,7 +204,6 @@ Module(
                   col_offset=55,
                   end_lineno=16,
                   end_col_offset=64)],
-              [],
               lineno=16,
               col_offset=42,
               end_lineno=16,
@@ -221,12 +216,10 @@ Module(
           col_offset=4,
           end_lineno=16,
           end_col_offset=65)],
-      [],
       lineno=15,
       col_offset=0,
       end_lineno=16,
-      end_col_offset=65)],
-  [])
+      end_col_offset=65)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -322,10 +315,7 @@ Module(
             lineno=15,
             col_offset=10,
             end_lineno=15,
-            end_col_offset=16)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=16)]),
       [
         Return(
           BinOp(
@@ -372,7 +362,6 @@ Module(
                     col_offset=29,
                     end_lineno=16,
                     end_col_offset=38)],
-                [],
                 lineno=16,
                 col_offset=16,
                 end_lineno=16,
@@ -417,7 +406,6 @@ Module(
                   col_offset=55,
                   end_lineno=16,
                   end_col_offset=64)],
-              [],
               lineno=16,
               col_offset=42,
               end_lineno=16,
@@ -430,10 +418,8 @@ Module(
           col_offset=4,
           end_lineno=16,
           end_col_offset=65)],
-      [],
       lineno=15,
       col_offset=0,
       end_lineno=16,
-      end_col_offset=65)],
-  [])
+      end_col_offset=65)])
 ## END NORMALIZED TREE ##

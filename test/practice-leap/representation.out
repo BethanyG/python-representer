@@ -19,10 +19,7 @@ Module(
             lineno=1,
             col_offset=14,
             end_lineno=1,
-            end_col_offset=18)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=18)]),
       [
         Return(
           BoolOp(
@@ -142,12 +139,10 @@ Module(
           col_offset=4,
           end_lineno=2,
           end_col_offset=65)],
-      [],
       lineno=1,
       col_offset=0,
       end_lineno=2,
-      end_col_offset=65)],
-  [])
+      end_col_offset=65)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -163,10 +158,7 @@ Module(
             lineno=1,
             col_offset=14,
             end_lineno=1,
-            end_col_offset=18)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=18)]),
       [
         Return(
           BoolOp(
@@ -286,10 +278,8 @@ Module(
           col_offset=4,
           end_lineno=2,
           end_col_offset=65)],
-      [],
       lineno=1,
       col_offset=0,
       end_lineno=2,
-      end_col_offset=65)],
-  [])
+      end_col_offset=65)])
 ## END NORMALIZED TREE ##

@@ -34,10 +34,7 @@ Module(
             lineno=1,
             col_offset=16,
             end_lineno=1,
-            end_col_offset=21)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=21)]),
       [
         Try(
           [
@@ -58,7 +55,6 @@ Module(
                     col_offset=13,
                     end_lineno=3,
                     end_col_offset=18)],
-                [],
                 lineno=3,
                 col_offset=8,
                 end_lineno=3,
@@ -104,12 +100,10 @@ Module(
               col_offset=8,
               end_lineno=7,
               end_col_offset=19)],
-          [],
           lineno=2,
           col_offset=4,
           end_lineno=7,
           end_col_offset=19)],
-      [],
       lineno=1,
       col_offset=0,
       end_lineno=7,
@@ -124,10 +118,7 @@ Module(
             lineno=10,
             col_offset=12,
             end_lineno=10,
-            end_col_offset=20)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=20)]),
       [
         Expr(
           Constant(
@@ -196,7 +187,6 @@ Module(
                         col_offset=23,
                         end_lineno=14,
                         end_col_offset=27)],
-                    [],
                     lineno=14,
                     col_offset=11,
                     end_lineno=14,
@@ -240,7 +230,6 @@ Module(
                           col_offset=54,
                           end_lineno=14,
                           end_col_offset=66)],
-                      [],
                       lineno=14,
                       col_offset=37,
                       end_lineno=14,
@@ -279,7 +268,6 @@ Module(
                         col_offset=33,
                         end_lineno=15,
                         end_col_offset=37)],
-                    [],
                     lineno=15,
                     col_offset=25,
                     end_lineno=15,
@@ -336,7 +324,6 @@ Module(
                             col_offset=29,
                             end_lineno=17,
                             end_col_offset=33)],
-                        [],
                         lineno=17,
                         col_offset=12,
                         end_lineno=17,
@@ -345,7 +332,6 @@ Module(
                       col_offset=12,
                       end_lineno=17,
                       end_col_offset=34)],
-                  [],
                   lineno=16,
                   col_offset=8,
                   end_lineno=17,
@@ -354,7 +340,6 @@ Module(
               col_offset=8,
               end_lineno=17,
               end_col_offset=34)],
-          [],
           lineno=13,
           col_offset=4,
           end_lineno=17,
@@ -371,12 +356,10 @@ Module(
           col_offset=4,
           end_lineno=18,
           end_col_offset=20)],
-      [],
       lineno=10,
       col_offset=0,
       end_lineno=18,
-      end_col_offset=20)],
-  [])
+      end_col_offset=20)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -392,10 +375,7 @@ Module(
             lineno=1,
             col_offset=16,
             end_lineno=1,
-            end_col_offset=21)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=21)]),
       [
         Try(
           [
@@ -416,7 +396,6 @@ Module(
                     col_offset=13,
                     end_lineno=3,
                     end_col_offset=18)],
-                [],
                 lineno=3,
                 col_offset=8,
                 end_lineno=3,
@@ -462,12 +441,10 @@ Module(
               col_offset=8,
               end_lineno=7,
               end_col_offset=19)],
-          [],
           lineno=2,
           col_offset=4,
           end_lineno=7,
           end_col_offset=19)],
-      [],
       lineno=1,
       col_offset=0,
       end_lineno=7,
@@ -482,10 +459,7 @@ Module(
             lineno=10,
             col_offset=12,
             end_lineno=10,
-            end_col_offset=20)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=20)]),
       [
         Assign(
           [
@@ -543,7 +517,6 @@ Module(
                         col_offset=23,
                         end_lineno=14,
                         end_col_offset=27)],
-                    [],
                     lineno=14,
                     col_offset=11,
                     end_lineno=14,
@@ -587,7 +560,6 @@ Module(
                           col_offset=54,
                           end_lineno=14,
                           end_col_offset=66)],
-                      [],
                       lineno=14,
                       col_offset=37,
                       end_lineno=14,
@@ -626,7 +598,6 @@ Module(
                         col_offset=33,
                         end_lineno=15,
                         end_col_offset=37)],
-                    [],
                     lineno=15,
                     col_offset=25,
                     end_lineno=15,
@@ -683,7 +654,6 @@ Module(
                             col_offset=29,
                             end_lineno=17,
                             end_col_offset=33)],
-                        [],
                         lineno=17,
                         col_offset=12,
                         end_lineno=17,
@@ -692,7 +662,6 @@ Module(
                       col_offset=12,
                       end_lineno=17,
                       end_col_offset=34)],
-                  [],
                   lineno=16,
                   col_offset=8,
                   end_lineno=17,
@@ -701,7 +670,6 @@ Module(
               col_offset=8,
               end_lineno=17,
               end_col_offset=34)],
-          [],
           lineno=13,
           col_offset=4,
           end_lineno=17,
@@ -718,10 +686,8 @@ Module(
           col_offset=4,
           end_lineno=18,
           end_col_offset=20)],
-      [],
       lineno=10,
       col_offset=0,
       end_lineno=18,
-      end_col_offset=20)],
-  [])
+      end_col_offset=20)])
 ## END NORMALIZED TREE ##

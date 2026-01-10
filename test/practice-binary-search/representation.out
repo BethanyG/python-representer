@@ -33,10 +33,7 @@ Module(
             lineno=1,
             col_offset=22,
             end_lineno=1,
-            end_col_offset=27)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=27)]),
       [
         Assign(
           [
@@ -83,7 +80,6 @@ Module(
                   col_offset=15,
                   end_lineno=3,
                   end_col_offset=26)],
-              [],
               lineno=3,
               col_offset=11,
               end_lineno=3,
@@ -332,7 +328,6 @@ Module(
               col_offset=8,
               end_lineno=11,
               end_col_offset=25)],
-          [],
           lineno=4,
           col_offset=4,
           end_lineno=11,
@@ -353,7 +348,6 @@ Module(
                 col_offset=21,
                 end_lineno=12,
                 end_col_offset=41)],
-            [],
             lineno=12,
             col_offset=10,
             end_lineno=12,
@@ -362,12 +356,10 @@ Module(
           col_offset=4,
           end_lineno=12,
           end_col_offset=42)],
-      [],
       lineno=1,
       col_offset=0,
       end_lineno=12,
-      end_col_offset=42)],
-  [])
+      end_col_offset=42)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -389,10 +381,7 @@ Module(
             lineno=1,
             col_offset=22,
             end_lineno=1,
-            end_col_offset=27)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=27)]),
       [
         Assign(
           [
@@ -439,7 +428,6 @@ Module(
                   col_offset=15,
                   end_lineno=3,
                   end_col_offset=26)],
-              [],
               lineno=3,
               col_offset=11,
               end_lineno=3,
@@ -688,7 +676,6 @@ Module(
               col_offset=8,
               end_lineno=11,
               end_col_offset=25)],
-          [],
           lineno=4,
           col_offset=4,
           end_lineno=11,
@@ -709,7 +696,6 @@ Module(
                 col_offset=21,
                 end_lineno=12,
                 end_col_offset=41)],
-            [],
             lineno=12,
             col_offset=10,
             end_lineno=12,
@@ -718,10 +704,8 @@ Module(
           col_offset=4,
           end_lineno=12,
           end_col_offset=42)],
-      [],
       lineno=1,
       col_offset=0,
       end_lineno=12,
-      end_col_offset=42)],
-  [])
+      end_col_offset=42)])
 ## END NORMALIZED TREE ##

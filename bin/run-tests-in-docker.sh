@@ -27,4 +27,4 @@ docker run \
     --mount type=tmpfs,dst=/tmp \
     --workdir /opt/representer \
     --entrypoint pytest \
-    exercism/python-representer -v  --disable-warnings
+    exercism/python-representer -vv  --disable-warnings

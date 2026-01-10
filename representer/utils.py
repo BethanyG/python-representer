@@ -53,8 +53,21 @@ def directory(string: str) -> Directory:
 def md5sum(data: str) -> str:
     """
     Return the md5 sum of the given string.
+
+    Somehow, the normalizer code is passing Ellipsis objects
+    to this function. This causes issues with encoding:
+    AttributeError: 'ellipsis' object has no attribute 'encode',
+    requiring the guard below until we can stop the normalizer from
+    passing the object.
+
+    See L360 in normalizer.py for the TODO.
     """
-    return md5(data.encode("utf-8")).hexdigest()
+
+    if not isinstance(data, str):
+        return
+
+    else:
+        return md5(data.encode("utf-8")).hexdigest()
 
 
 def single_space(text: str) -> str:
@@ -83,7 +96,7 @@ def parse(source: str) -> ast.AST:
     Wrapper around ast.parse.
     Preserves type annotations.
     """
-    return ast.parse(source, type_comments=False, feature_version=(3,11))
+    return ast.parse(source, type_comments=True, feature_version=(3,13))
 
 
 def dump_tree(tree: ast.AST) -> str:

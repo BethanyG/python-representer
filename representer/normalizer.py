@@ -1,5 +1,18 @@
 """
 Representer for Python.
+
+The following features have been deprecated in documentation since
+Python 3.8, now cause a DeprecationWarning to be emitted at runtime
+when they are accessed or used, and
+***will be removed in Python 3.14***:
+
+ast.Num
+ast.Str
+ast.Bytes
+ast.NameConstant
+ast.Ellipsis
+
+Use ast.Constant instead.
 """
 import builtins
 from itertools import count
@@ -20,6 +33,7 @@ from ast import (
     Eq,
     ExceptHandler,
     Expr,
+    Ellipsis, # <-- deprecated in 3.14
     FunctionDef,
     GeneratorExp,
     Global,
@@ -31,15 +45,18 @@ from ast import (
     Name,
     NodeTransformer,
     Nonlocal,
+    Pass,
     SetComp,
-    Str,
+    Str, # <-- deprecated in 3.14
     Store,
     UnaryOp,
     Yield,
     YieldFrom,
     alias,
     arg,
+    fix_missing_locations,
     get_docstring,
+    iter_child_nodes,
     keyword,
 )
 
@@ -82,11 +99,25 @@ class Normalizer(NodeTransformer):
         """
         return {value: key for key, value in self._placeholder_cache.items()}
 
+
+    def fix_empty_bodies(self, node):
+        def _fix(node):
+            if isinstance(getattr(node, 'body', None), list) and not node.body:
+                node.body = [Pass()]
+            for child in iter_child_nodes(node):
+                _fix(child)
+
+        _fix(node)
+        return node
+
+
     def register_docstring(self, node: AST) -> None:
         """
         Register the docstring for this node.
         """
+
         docstring = get_docstring(node, clean=False)
+
         if docstring:
             self._docstring_cache.add(utils.md5sum(docstring))
 
@@ -116,31 +147,49 @@ class Normalizer(NodeTransformer):
         self.generic_visit(node)
         return node
 
-    def visit_ClassDef(self, node: ClassDef) -> ClassDef:
-        """
-        Any `class name` definition.
-        """
-        return self._visit_definition(node)
-
-    def visit_FunctionDef(self, node: FunctionDef) -> FunctionDef:
-        """
-        Any `def name` definition.
-        """
-        if node.returns:
-            node.returns = None
-        return self._visit_definition(node)
 
     def visit_AnnAssign(self, node: AnnAssign) -> Assign:
         """
         Any type-annotated assignment
 
         Converts type-annotated assignments to regular assignments.
+
+        In a class decorated by a dataclass decorator or where there
+         is an unassigned but annotated class variable,
+        the "missing" value is assigned None for the purposes of
+         this representation.
+
+        This is to avoid ast parsing errors caused by annotation removal
+        pre dataclass decorator (the decorator fills values in at runtime).
+        Otherwise, the ast lib tosses an error because there are no node._fields
+        for it to iterate through.
         """
+
         new_assign = Assign(targets=[node.target],
-                            value=node.value,
+                            value=node.value if node.value else Constant(value=None),
                             lineno=node.lineno)
+
         self.generic_visit(new_assign)
         return new_assign
+
+
+    def visit_ClassDef(self, node: ClassDef) -> ClassDef:
+        """
+        Any `class name` definition.
+        """
+
+        return self._visit_definition(node)
+
+
+    def visit_FunctionDef(self, node: FunctionDef) -> FunctionDef:
+        """
+        Any `def name` definition.
+        """
+
+        if node.returns:
+            node.returns = None
+
+        return self._visit_definition(node)
 
     def visit_AsyncFunctionDef(self, node: AsyncFunctionDef) -> AsyncFunctionDef:
         """
@@ -154,6 +203,7 @@ class Normalizer(NodeTransformer):
         Drops type annotations.
         """
         node.arg = self.add_placeholder(node.arg)
+
         if node.annotation:
             node.annotation = None
         self.generic_visit(node)
@@ -303,6 +353,7 @@ class Normalizer(NodeTransformer):
         self.generic_visit(node)
         return node
 
+
     def visit_Expr(self, node: Expr) -> Optional[Expr]:
         """Expressions not assigned to an identifier.
 
@@ -316,10 +367,13 @@ class Normalizer(NodeTransformer):
             if node.value.func.id == 'print':
                 return None
 
+        # Eliminate registered docstrings
+        # Added guard to utils.py to pass on anything
+        # that's not a string so that ellipsis doesn't
+        # cause the md5sum function to barf.
         if isinstance(node.value, Constant) and not isinstance(node.value, Call):
-            # eliminate registered docstrings
-            if utils.md5sum(node.value.value) in self._docstring_cache:
-                return None
+           if utils.md5sum(node.value.value) in self._docstring_cache:
+               return None
 
         self.generic_visit(node)
         return node

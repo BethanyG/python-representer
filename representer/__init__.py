@@ -26,6 +26,14 @@ class Representer:
         """
         self._tree = self._normalizer.visit(self._tree)
 
+    def clean_up_normalization(self) -> None:
+        """
+        Clean up the tree normalization, replacing empty ClassDef
+        and Function Def bodies with pass, so that black is happy
+         formatting them.
+        """
+        self._tree = self._normalizer.fix_empty_bodies(self._tree)
+
     def dump_tree(self) -> str:
         """
         Dump the current state of the tree for printing.
@@ -105,6 +113,9 @@ def represent(slug: utils.Slug, input: utils.Directory, output: utils.Directory)
 
     # normalize the tree
     representation.normalize()
+
+    # clean up missing function and class bodies with pass
+    representation.clean_up_normalization()
 
     # save dump of normalized code for debug (from un-parsing the normalized AST).
     out[0:0] = ['## BEGIN NORMALIZED CODE ##', representation.dump_code(), "## END NORMALIZED CODE ##", '']

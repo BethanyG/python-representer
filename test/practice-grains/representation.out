@@ -27,10 +27,7 @@ Module(
             lineno=1,
             col_offset=11,
             end_lineno=1,
-            end_col_offset=17)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=17)]),
       [
         If(
           Compare(
@@ -71,7 +68,6 @@ Module(
                     col_offset=25,
                     end_lineno=3,
                     end_col_offset=58)],
-                [],
                 lineno=3,
                 col_offset=14,
                 end_lineno=3,
@@ -120,7 +116,6 @@ Module(
                         col_offset=25,
                         end_lineno=5,
                         end_col_offset=58)],
-                    [],
                     lineno=5,
                     col_offset=14,
                     end_lineno=5,
@@ -169,7 +164,6 @@ Module(
                             col_offset=25,
                             end_lineno=7,
                             end_col_offset=58)],
-                        [],
                         lineno=7,
                         col_offset=14,
                         end_lineno=7,
@@ -178,7 +172,6 @@ Module(
                       col_offset=8,
                       end_lineno=7,
                       end_col_offset=59)],
-                  [],
                   lineno=6,
                   col_offset=4,
                   end_lineno=7,
@@ -227,19 +220,13 @@ Module(
           col_offset=4,
           end_lineno=9,
           end_col_offset=28)],
-      [],
       lineno=1,
       col_offset=0,
       end_lineno=9,
       end_col_offset=28),
     FunctionDef(
       'total',
-      arguments(
-        [],
-        [],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+      arguments(),
       [
         Return(
           BinOp(
@@ -276,12 +263,10 @@ Module(
           col_offset=4,
           end_lineno=13,
           end_col_offset=24)],
-      [],
       lineno=12,
       col_offset=0,
       end_lineno=13,
-      end_col_offset=24)],
-  [])
+      end_col_offset=24)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -297,10 +282,7 @@ Module(
             lineno=1,
             col_offset=11,
             end_lineno=1,
-            end_col_offset=17)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=17)]),
       [
         If(
           Compare(
@@ -341,7 +323,6 @@ Module(
                     col_offset=25,
                     end_lineno=3,
                     end_col_offset=58)],
-                [],
                 lineno=3,
                 col_offset=14,
                 end_lineno=3,
@@ -390,7 +371,6 @@ Module(
                         col_offset=25,
                         end_lineno=5,
                         end_col_offset=58)],
-                    [],
                     lineno=5,
                     col_offset=14,
                     end_lineno=5,
@@ -439,7 +419,6 @@ Module(
                             col_offset=25,
                             end_lineno=7,
                             end_col_offset=58)],
-                        [],
                         lineno=7,
                         col_offset=14,
                         end_lineno=7,
@@ -448,7 +427,6 @@ Module(
                       col_offset=8,
                       end_lineno=7,
                       end_col_offset=59)],
-                  [],
                   lineno=6,
                   col_offset=4,
                   end_lineno=7,
@@ -497,19 +475,13 @@ Module(
           col_offset=4,
           end_lineno=9,
           end_col_offset=28)],
-      [],
       lineno=1,
       col_offset=0,
       end_lineno=9,
       end_col_offset=28),
     FunctionDef(
       'placeholder_2',
-      arguments(
-        [],
-        [],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+      arguments(),
       [
         Return(
           BinOp(
@@ -546,10 +518,8 @@ Module(
           col_offset=4,
           end_lineno=13,
           end_col_offset=24)],
-      [],
       lineno=12,
       col_offset=0,
       end_lineno=13,
-      end_col_offset=24)],
-  [])
+      end_col_offset=24)])
 ## END NORMALIZED TREE ##

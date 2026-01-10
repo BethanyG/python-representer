@@ -16,6 +16,69 @@ def placeholder_5(placeholder_1):
 def placeholder_7(placeholder_8, placeholder_9):
     return placeholder_8.split()[placeholder_9].strip(".") + "en"
 
+
+def placeholder_10():
+    try:
+        placeholder_11 = (
+            placeholder_12.split(";") for placeholder_12 in tournament_results
+        )
+        placeholder_13 = compile_statistics(placeholder_11)
+    except AttributeError:
+        logger.exception(f"There is a problem with the tournament results string: ")
+        raise
+    except IndexError:
+        logger.exception(f"Compiling team statistics failed: ")
+        raise
+    return make_report(placeholder_13)
+
+
+class placeholder_14:
+    placeholder_15 = ("_year", "_month", "_day", "_hashcode")
+
+    def placeholder_16(
+        placeholder_17, placeholder_18, placeholder_19=None, placeholder_20=None
+    ):
+        if (
+            placeholder_19 is None
+            and isinstance(placeholder_18, (bytes, str))
+            and (len(placeholder_18) == 4)
+            and (1 <= ord(placeholder_18[2:3]) <= 12)
+        ):
+            if isinstance(placeholder_18, str):
+                try:
+                    placeholder_18 = placeholder_18.encode("latin1")
+                except UnicodeEncodeError:
+                    raise ValueError(
+                        "Failed to encode latin1 string when unpickling a date object. pickle.load(data, encoding='latin1') is assumed."
+                    )
+            self = object.placeholder_16(placeholder_17)
+            self.__setstate(placeholder_18)
+            self.placeholder_21 = -1
+            return self
+
+
+def placeholder_22():
+    pass
+
+
+class placeholder_23:
+    pass
+
+
+class placeholder_24:
+
+    def placeholder_25(self):
+        pass
+
+
+def placeholder_26(): ...
+
+
+class placeholder_24:
+    ...
+
+    def placeholder_25(self): ...
+
 ## END NORMALIZED CODE ##
 
 ## BEGIN TREE BEFORE ##
@@ -39,53 +102,49 @@ Module(
         [
           arg(
             'word',
-            lineno=8,
+            lineno=10,
             col_offset=18,
-            end_lineno=8,
-            end_col_offset=22)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_lineno=10,
+            end_col_offset=22)]),
       [
         Expr(
           Constant(
             "\n\n    :param word: str of a root word\n    :return:  str of root word with un prefix\n\n    This function takes `word` as a parameter and\n    returns a new word with an 'un' prefix.\n    ",
-            lineno=9,
+            lineno=11,
             col_offset=4,
-            end_lineno=16,
+            end_lineno=18,
             end_col_offset=7),
-          lineno=9,
+          lineno=11,
           col_offset=4,
-          end_lineno=16,
+          end_lineno=18,
           end_col_offset=7),
         Return(
           BinOp(
             Constant(
               'un',
-              lineno=17,
+              lineno=19,
               col_offset=11,
-              end_lineno=17,
+              end_lineno=19,
               end_col_offset=15),
             Add(),
             Name(
               'word',
               Load(),
-              lineno=17,
+              lineno=19,
               col_offset=18,
-              end_lineno=17,
+              end_lineno=19,
               end_col_offset=22),
-            lineno=17,
+            lineno=19,
             col_offset=11,
-            end_lineno=17,
+            end_lineno=19,
             end_col_offset=22),
-          lineno=17,
+          lineno=19,
           col_offset=4,
-          end_lineno=17,
+          end_lineno=19,
           end_col_offset=22)],
-      [],
-      lineno=8,
+      lineno=10,
       col_offset=0,
-      end_lineno=17,
+      end_lineno=19,
       end_col_offset=22),
     FunctionDef(
       'make_word_groups',
@@ -94,43 +153,40 @@ Module(
         [
           arg(
             'vocab_words',
-            lineno=20,
+            lineno=22,
             col_offset=21,
-            end_lineno=20,
-            end_col_offset=32)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_lineno=22,
+            end_col_offset=32)]),
       [
         Expr(
           Constant(
-            "\n\n    :param vocab_words: list of vocabulary words with a prefix.\n    :return: str of prefix followed by vocabulary words with\n             prefix applied, separated by ' :: '.\n\n    This function takes a `vocab_words` list and returns a string\n    with the prefix  and the words with prefix applied, separated\n     by ' :: '.\n    ",
-            lineno=21,
+            "Create word groups from a list of vocab words.\n\n    :param vocab_words: list of vocabulary words with a prefix.\n    :return: str of prefix followed by vocabulary words with\n             prefix applied, separated by ' :: '.\n\n    This function takes a `vocab_words` list and returns a string\n    with the prefix  and the words with prefix applied, separated\n     by ' :: '.\n    ",
+            lineno=23,
             col_offset=4,
-            end_lineno=30,
+            end_lineno=32,
             end_col_offset=7),
-          lineno=21,
+          lineno=23,
           col_offset=4,
-          end_lineno=30,
+          end_lineno=32,
           end_col_offset=7),
         Assign(
           [
             Name(
               'multi_line_string',
               Store(),
-              lineno=32,
+              lineno=34,
               col_offset=4,
-              end_lineno=32,
+              end_lineno=34,
               end_col_offset=21)],
           Constant(
             'This is a multi-line string.\n    This should NOT get cleaned as a docstring, but retained, because it is assigned\n    a name, and is therefore a plain string, and not a docstring.',
-            lineno=32,
+            lineno=34,
             col_offset=24,
-            end_lineno=34,
+            end_lineno=36,
             end_col_offset=68),
-          lineno=32,
+          lineno=34,
           col_offset=4,
-          end_lineno=34,
+          end_lineno=36,
           end_col_offset=68),
         Return(
           Call(
@@ -138,61 +194,59 @@ Module(
               BinOp(
                 Constant(
                   ' :: ',
-                  lineno=36,
+                  lineno=38,
                   col_offset=12,
-                  end_lineno=36,
+                  end_lineno=38,
                   end_col_offset=18),
                 Add(),
                 Subscript(
                   Name(
                     'vocab_words',
                     Load(),
-                    lineno=36,
+                    lineno=38,
                     col_offset=21,
-                    end_lineno=36,
+                    end_lineno=38,
                     end_col_offset=32),
                   Constant(
                     0,
-                    lineno=36,
+                    lineno=38,
                     col_offset=33,
-                    end_lineno=36,
+                    end_lineno=38,
                     end_col_offset=34),
                   Load(),
-                  lineno=36,
+                  lineno=38,
                   col_offset=21,
-                  end_lineno=36,
+                  end_lineno=38,
                   end_col_offset=35),
-                lineno=36,
+                lineno=38,
                 col_offset=12,
-                end_lineno=36,
+                end_lineno=38,
                 end_col_offset=35),
               'join',
               Load(),
-              lineno=36,
+              lineno=38,
               col_offset=11,
-              end_lineno=36,
+              end_lineno=38,
               end_col_offset=41),
             [
               Name(
                 'vocab_words',
                 Load(),
-                lineno=36,
+                lineno=38,
                 col_offset=42,
-                end_lineno=36,
+                end_lineno=38,
                 end_col_offset=53)],
-            [],
-            lineno=36,
+            lineno=38,
             col_offset=11,
-            end_lineno=36,
+            end_lineno=38,
             end_col_offset=54),
-          lineno=36,
+          lineno=38,
           col_offset=4,
-          end_lineno=36,
+          end_lineno=38,
           end_col_offset=54)],
-      [],
-      lineno=20,
+      lineno=22,
       col_offset=0,
-      end_lineno=36,
+      end_lineno=38,
       end_col_offset=54),
     FunctionDef(
       'remove_suffix_ness',
@@ -201,43 +255,40 @@ Module(
         [
           arg(
             'word',
-            lineno=39,
+            lineno=41,
             col_offset=23,
-            end_lineno=39,
-            end_col_offset=27)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_lineno=41,
+            end_col_offset=27)]),
       [
         Expr(
           Constant(
-            '\n\n    :param word: str of word to remove suffix from.\n    :return: str of word with suffix removed & spelling adjusted.\n\n    This function takes in a word and returns the base word with `ness` removed.\n    ',
-            lineno=40,
+            'Remove the suffix of a word.\n\n    :param word: str of word to remove suffix from.\n    :return: str of word with suffix removed & spelling adjusted.\n\n    This function takes in a word and returns the base word with `ness` removed.\n    ',
+            lineno=42,
             col_offset=4,
-            end_lineno=46,
+            end_lineno=48,
             end_col_offset=7),
-          lineno=40,
+          lineno=42,
           col_offset=4,
-          end_lineno=46,
+          end_lineno=48,
           end_col_offset=7),
         Assign(
           [
             Name(
               'MULTI_LINE_CONSTANT',
               Store(),
-              lineno=48,
+              lineno=50,
               col_offset=4,
-              end_lineno=48,
+              end_lineno=50,
               end_col_offset=23)],
           Constant(
             'This is a multi-line string constant.\n       This should NOT get cleaned as a docstring, but retained, because it is assigned\n       a name, and is therefore a plain string, and not a docstring.',
-            lineno=48,
+            lineno=50,
             col_offset=26,
-            end_lineno=50,
+            end_lineno=52,
             end_col_offset=71),
-          lineno=48,
+          lineno=50,
           col_offset=4,
-          end_lineno=50,
+          end_lineno=52,
           end_col_offset=71),
         Return(
           IfExp(
@@ -246,124 +297,123 @@ Module(
                 Name(
                   'word',
                   Load(),
-                  lineno=52,
+                  lineno=54,
                   col_offset=24,
-                  end_lineno=52,
+                  end_lineno=54,
                   end_col_offset=28),
                 UnaryOp(
                   USub(),
                   Constant(
                     5,
-                    lineno=52,
+                    lineno=54,
                     col_offset=30,
-                    end_lineno=52,
+                    end_lineno=54,
                     end_col_offset=31),
-                  lineno=52,
+                  lineno=54,
                   col_offset=29,
-                  end_lineno=52,
+                  end_lineno=54,
                   end_col_offset=31),
                 Load(),
-                lineno=52,
+                lineno=54,
                 col_offset=24,
-                end_lineno=52,
+                end_lineno=54,
                 end_col_offset=32),
               [
                 NotEq()],
               [
                 Constant(
                   'i',
-                  lineno=52,
+                  lineno=54,
                   col_offset=36,
-                  end_lineno=52,
+                  end_lineno=54,
                   end_col_offset=39)],
-              lineno=52,
+              lineno=54,
               col_offset=24,
-              end_lineno=52,
+              end_lineno=54,
               end_col_offset=39),
             Subscript(
               Name(
                 'word',
                 Load(),
-                lineno=52,
+                lineno=54,
                 col_offset=11,
-                end_lineno=52,
+                end_lineno=54,
                 end_col_offset=15),
               Slice(
                 upper=UnaryOp(
                   USub(),
                   Constant(
                     4,
-                    lineno=52,
+                    lineno=54,
                     col_offset=18,
-                    end_lineno=52,
+                    end_lineno=54,
                     end_col_offset=19),
-                  lineno=52,
+                  lineno=54,
                   col_offset=17,
-                  end_lineno=52,
+                  end_lineno=54,
                   end_col_offset=19),
-                lineno=52,
+                lineno=54,
                 col_offset=16,
-                end_lineno=52,
+                end_lineno=54,
                 end_col_offset=19),
               Load(),
-              lineno=52,
+              lineno=54,
               col_offset=11,
-              end_lineno=52,
+              end_lineno=54,
               end_col_offset=20),
             BinOp(
               Subscript(
                 Name(
                   'word',
                   Load(),
-                  lineno=52,
+                  lineno=54,
                   col_offset=45,
-                  end_lineno=52,
+                  end_lineno=54,
                   end_col_offset=49),
                 Slice(
                   upper=UnaryOp(
                     USub(),
                     Constant(
                       5,
-                      lineno=52,
+                      lineno=54,
                       col_offset=52,
-                      end_lineno=52,
+                      end_lineno=54,
                       end_col_offset=53),
-                    lineno=52,
+                    lineno=54,
                     col_offset=51,
-                    end_lineno=52,
+                    end_lineno=54,
                     end_col_offset=53),
-                  lineno=52,
+                  lineno=54,
                   col_offset=50,
-                  end_lineno=52,
+                  end_lineno=54,
                   end_col_offset=53),
                 Load(),
-                lineno=52,
+                lineno=54,
                 col_offset=45,
-                end_lineno=52,
+                end_lineno=54,
                 end_col_offset=54),
               Add(),
               Constant(
                 'y',
-                lineno=52,
+                lineno=54,
                 col_offset=57,
-                end_lineno=52,
+                end_lineno=54,
                 end_col_offset=60),
-              lineno=52,
+              lineno=54,
               col_offset=45,
-              end_lineno=52,
+              end_lineno=54,
               end_col_offset=60),
-            lineno=52,
+            lineno=54,
             col_offset=11,
-            end_lineno=52,
+            end_lineno=54,
             end_col_offset=60),
-          lineno=52,
+          lineno=54,
           col_offset=4,
-          end_lineno=52,
+          end_lineno=54,
           end_col_offset=60)],
-      [],
-      lineno=39,
+      lineno=41,
       col_offset=0,
-      end_lineno=52,
+      end_lineno=54,
       end_col_offset=60),
     FunctionDef(
       'adjective_to_verb',
@@ -372,30 +422,27 @@ Module(
         [
           arg(
             'sentence',
-            lineno=55,
+            lineno=57,
             col_offset=22,
-            end_lineno=55,
+            end_lineno=57,
             end_col_offset=30),
           arg(
             'index',
-            lineno=55,
+            lineno=57,
             col_offset=32,
-            end_lineno=55,
-            end_col_offset=37)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_lineno=57,
+            end_col_offset=37)]),
       [
         Expr(
           Constant(
-            '\n\n    :param sentence: str that uses the word in sentence\n    :param index:  index of the word to remove and transform\n    :return:  str word that changes the extracted adjective to a verb.\n\n    A function takes a `sentence` using the\n    vocabulary word, and the `index` of the word once that sentence\n    is split apart.  The function should return the extracted\n    adjective as a verb.\n    ',
-            lineno=56,
+            'Turn an adjective form into a verb form.\n\n    :param sentence: str that uses the word in sentence\n    :param index:  index of the word to remove and transform\n    :return:  str word that changes the extracted adjective to a verb.\n\n    A function takes a `sentence` using the\n    vocabulary word, and the `index` of the word once that sentence\n    is split apart.  The function should return the extracted\n    adjective as a verb.\n    ',
+            lineno=58,
             col_offset=4,
-            end_lineno=66,
+            end_lineno=68,
             end_col_offset=7),
-          lineno=56,
+          lineno=58,
           col_offset=4,
-          end_lineno=66,
+          end_lineno=68,
           end_col_offset=7),
         Return(
           BinOp(
@@ -407,73 +454,1036 @@ Module(
                       Name(
                         'sentence',
                         Load(),
-                        lineno=67,
+                        lineno=69,
                         col_offset=11,
-                        end_lineno=67,
+                        end_lineno=69,
                         end_col_offset=19),
                       'split',
                       Load(),
-                      lineno=67,
+                      lineno=69,
                       col_offset=11,
-                      end_lineno=67,
+                      end_lineno=69,
                       end_col_offset=25),
-                    [],
-                    [],
-                    lineno=67,
+                    lineno=69,
                     col_offset=11,
-                    end_lineno=67,
+                    end_lineno=69,
                     end_col_offset=27),
                   Name(
                     'index',
                     Load(),
-                    lineno=67,
+                    lineno=69,
                     col_offset=28,
-                    end_lineno=67,
+                    end_lineno=69,
                     end_col_offset=33),
                   Load(),
-                  lineno=67,
+                  lineno=69,
                   col_offset=11,
-                  end_lineno=67,
+                  end_lineno=69,
                   end_col_offset=34),
                 'strip',
                 Load(),
-                lineno=67,
+                lineno=69,
                 col_offset=11,
-                end_lineno=67,
+                end_lineno=69,
                 end_col_offset=40),
               [
                 Constant(
                   '.',
-                  lineno=67,
+                  lineno=69,
                   col_offset=41,
-                  end_lineno=67,
+                  end_lineno=69,
                   end_col_offset=44)],
-              [],
-              lineno=67,
+              lineno=69,
               col_offset=11,
-              end_lineno=67,
+              end_lineno=69,
               end_col_offset=45),
             Add(),
             Constant(
               'en',
-              lineno=67,
+              lineno=69,
               col_offset=48,
-              end_lineno=67,
+              end_lineno=69,
               end_col_offset=52),
-            lineno=67,
+            lineno=69,
             col_offset=11,
-            end_lineno=67,
+            end_lineno=69,
             end_col_offset=52),
-          lineno=67,
+          lineno=69,
           col_offset=4,
-          end_lineno=67,
+          end_lineno=69,
           end_col_offset=52)],
-      [],
-      lineno=55,
+      lineno=57,
       col_offset=0,
-      end_lineno=67,
-      end_col_offset=52)],
-  [])
+      end_lineno=69,
+      end_col_offset=52),
+    FunctionDef(
+      'function_with_doctest',
+      arguments(),
+      [
+        Expr(
+          Constant(
+            'Generate a list of formatted report strings for tournament results.\n\n         >>> test = (tally(["Courageous Californians;Devastating Donkeys;win",                            "Allegoric Alaskans;Blithering Badgers;win",                            "Devastating Donkeys;Allegoric Alaskans;loss",                            "Courageous Californians;Blithering Badgers;win",                            "Blithering Badgers;Devastating Donkeys;draw",                            "Allegoric Alaskans;Courageous Californians;draw"]))\n         >>> print(type(test))\n         <class \'list\'>\n         >>> print(test[0])\n         Team                           | MP |  W |  D |  L |  P\n         >>> print(test[1])\n         Allegoric Alaskans             |  3 |  2 |  1 |  0 |  7\n         >>> print(test[2])\n         Courageous Californians        |  3 |  2 |  1 |  0 |  7\n         >>> print(test[3])\n         Blithering Badgers             |  3 |  0 |  1 |  2 |  1\n         >>> print(test[4])\n         Devastating Donkeys            |  3 |  0 |  1 |  2 |  1\n        ',
+            lineno=74,
+            col_offset=8,
+            end_lineno=94,
+            end_col_offset=11),
+          lineno=74,
+          col_offset=8,
+          end_lineno=94,
+          end_col_offset=11),
+        Try(
+          [
+            Assign(
+              [
+                Name(
+                  'results',
+                  Store(),
+                  lineno=97,
+                  col_offset=12,
+                  end_lineno=97,
+                  end_col_offset=19)],
+              GeneratorExp(
+                Call(
+                  Attribute(
+                    Name(
+                      'row',
+                      Load(),
+                      lineno=97,
+                      col_offset=23,
+                      end_lineno=97,
+                      end_col_offset=26),
+                    'split',
+                    Load(),
+                    lineno=97,
+                    col_offset=23,
+                    end_lineno=97,
+                    end_col_offset=32),
+                  [
+                    Constant(
+                      ';',
+                      lineno=97,
+                      col_offset=33,
+                      end_lineno=97,
+                      end_col_offset=36)],
+                  lineno=97,
+                  col_offset=23,
+                  end_lineno=97,
+                  end_col_offset=37),
+                [
+                  comprehension(
+                    Name(
+                      'row',
+                      Store(),
+                      lineno=97,
+                      col_offset=42,
+                      end_lineno=97,
+                      end_col_offset=45),
+                    Name(
+                      'tournament_results',
+                      Load(),
+                      lineno=97,
+                      col_offset=49,
+                      end_lineno=97,
+                      end_col_offset=67),
+                    [],
+                    0)],
+                lineno=97,
+                col_offset=22,
+                end_lineno=97,
+                end_col_offset=68),
+              lineno=97,
+              col_offset=12,
+              end_lineno=97,
+              end_col_offset=68),
+            Assign(
+              [
+                Name(
+                  'tournament_stats',
+                  Store(),
+                  lineno=98,
+                  col_offset=12,
+                  end_lineno=98,
+                  end_col_offset=28)],
+              Call(
+                Name(
+                  'compile_statistics',
+                  Load(),
+                  lineno=98,
+                  col_offset=31,
+                  end_lineno=98,
+                  end_col_offset=49),
+                [
+                  Name(
+                    'results',
+                    Load(),
+                    lineno=98,
+                    col_offset=50,
+                    end_lineno=98,
+                    end_col_offset=57)],
+                lineno=98,
+                col_offset=31,
+                end_lineno=98,
+                end_col_offset=58),
+              lineno=98,
+              col_offset=12,
+              end_lineno=98,
+              end_col_offset=58)],
+          [
+            ExceptHandler(
+              Name(
+                'AttributeError',
+                Load(),
+                lineno=100,
+                col_offset=15,
+                end_lineno=100,
+                end_col_offset=29),
+              body=[
+                Expr(
+                  Call(
+                    Attribute(
+                      Name(
+                        'logger',
+                        Load(),
+                        lineno=101,
+                        col_offset=12,
+                        end_lineno=101,
+                        end_col_offset=18),
+                      'exception',
+                      Load(),
+                      lineno=101,
+                      col_offset=12,
+                      end_lineno=101,
+                      end_col_offset=28),
+                    [
+                      JoinedStr(
+                        [
+                          Constant(
+                            'There is a problem with the tournament results string: ',
+                            lineno=101,
+                            col_offset=31,
+                            end_lineno=101,
+                            end_col_offset=86)],
+                        lineno=101,
+                        col_offset=29,
+                        end_lineno=101,
+                        end_col_offset=87)],
+                    lineno=101,
+                    col_offset=12,
+                    end_lineno=101,
+                    end_col_offset=88),
+                  lineno=101,
+                  col_offset=12,
+                  end_lineno=101,
+                  end_col_offset=88),
+                Raise(
+                  lineno=102,
+                  col_offset=12,
+                  end_lineno=102,
+                  end_col_offset=17)],
+              lineno=100,
+              col_offset=8,
+              end_lineno=102,
+              end_col_offset=17),
+            ExceptHandler(
+              Name(
+                'IndexError',
+                Load(),
+                lineno=104,
+                col_offset=15,
+                end_lineno=104,
+                end_col_offset=25),
+              body=[
+                Expr(
+                  Call(
+                    Attribute(
+                      Name(
+                        'logger',
+                        Load(),
+                        lineno=105,
+                        col_offset=12,
+                        end_lineno=105,
+                        end_col_offset=18),
+                      'exception',
+                      Load(),
+                      lineno=105,
+                      col_offset=12,
+                      end_lineno=105,
+                      end_col_offset=28),
+                    [
+                      JoinedStr(
+                        [
+                          Constant(
+                            'Compiling team statistics failed: ',
+                            lineno=105,
+                            col_offset=31,
+                            end_lineno=105,
+                            end_col_offset=65)],
+                        lineno=105,
+                        col_offset=29,
+                        end_lineno=105,
+                        end_col_offset=66)],
+                    lineno=105,
+                    col_offset=12,
+                    end_lineno=105,
+                    end_col_offset=67),
+                  lineno=105,
+                  col_offset=12,
+                  end_lineno=105,
+                  end_col_offset=67),
+                Raise(
+                  lineno=106,
+                  col_offset=12,
+                  end_lineno=106,
+                  end_col_offset=17)],
+              lineno=104,
+              col_offset=8,
+              end_lineno=106,
+              end_col_offset=17)],
+          lineno=96,
+          col_offset=8,
+          end_lineno=106,
+          end_col_offset=17),
+        Return(
+          Call(
+            Name(
+              'make_report',
+              Load(),
+              lineno=108,
+              col_offset=15,
+              end_lineno=108,
+              end_col_offset=26),
+            [
+              Name(
+                'tournament_stats',
+                Load(),
+                lineno=108,
+                col_offset=27,
+                end_lineno=108,
+                end_col_offset=43)],
+            lineno=108,
+            col_offset=15,
+            end_lineno=108,
+            end_col_offset=44),
+          lineno=108,
+          col_offset=8,
+          end_lineno=108,
+          end_col_offset=44)],
+      lineno=73,
+      col_offset=0,
+      end_lineno=108,
+      end_col_offset=44),
+    ClassDef(
+      'date',
+      [],
+      [],
+      [
+        Expr(
+          Constant(
+            'Concrete date type.\n\n    Constructors:\n\n    __new__()\n    fromtimestamp()\n    today()\n    fromordinal()\n\n    Operators:\n\n    __repr__, __str__\n    __eq__, __le__, __lt__, __ge__, __gt__, __hash__\n    __add__, __radd__, __sub__ (add/radd only with timedelta arg)\n\n    Methods:\n\n    timetuple()\n    toordinal()\n    weekday()\n    isoweekday(), isocalendar(), isoformat()\n    ctime()\n    strftime()\n\n    Properties (readonly):\n    year, month, day\n    ',
+            lineno=113,
+            col_offset=4,
+            end_lineno=139,
+            end_col_offset=7),
+          lineno=113,
+          col_offset=4,
+          end_lineno=139,
+          end_col_offset=7),
+        Assign(
+          [
+            Name(
+              '__slots__',
+              Store(),
+              lineno=140,
+              col_offset=4,
+              end_lineno=140,
+              end_col_offset=13)],
+          Tuple(
+            [
+              Constant(
+                '_year',
+                lineno=140,
+                col_offset=16,
+                end_lineno=140,
+                end_col_offset=23),
+              Constant(
+                '_month',
+                lineno=140,
+                col_offset=25,
+                end_lineno=140,
+                end_col_offset=33),
+              Constant(
+                '_day',
+                lineno=140,
+                col_offset=35,
+                end_lineno=140,
+                end_col_offset=41),
+              Constant(
+                '_hashcode',
+                lineno=140,
+                col_offset=43,
+                end_lineno=140,
+                end_col_offset=54)],
+            Load(),
+            lineno=140,
+            col_offset=16,
+            end_lineno=140,
+            end_col_offset=54),
+          lineno=140,
+          col_offset=4,
+          end_lineno=140,
+          end_col_offset=54),
+        FunctionDef(
+          '__new__',
+          arguments(
+            [],
+            [
+              arg(
+                'cls',
+                lineno=142,
+                col_offset=16,
+                end_lineno=142,
+                end_col_offset=19),
+              arg(
+                'year',
+                lineno=142,
+                col_offset=21,
+                end_lineno=142,
+                end_col_offset=25),
+              arg(
+                'month',
+                lineno=142,
+                col_offset=27,
+                end_lineno=142,
+                end_col_offset=32),
+              arg(
+                'day',
+                lineno=142,
+                col_offset=39,
+                end_lineno=142,
+                end_col_offset=42)],
+            defaults=[
+              Constant(
+                None,
+                lineno=142,
+                col_offset=33,
+                end_lineno=142,
+                end_col_offset=37),
+              Constant(
+                None,
+                lineno=142,
+                col_offset=43,
+                end_lineno=142,
+                end_col_offset=47)]),
+          [
+            Expr(
+              Constant(
+                'Constructor.\n\n        Arguments:\n\n        year, month, day (required, base 1)\n        ',
+                lineno=143,
+                col_offset=8,
+                end_lineno=148,
+                end_col_offset=11),
+              lineno=143,
+              col_offset=8,
+              end_lineno=148,
+              end_col_offset=11),
+            If(
+              BoolOp(
+                And(),
+                [
+                  Compare(
+                    Name(
+                      'month',
+                      Load(),
+                      lineno=149,
+                      col_offset=12,
+                      end_lineno=149,
+                      end_col_offset=17),
+                    [
+                      Is()],
+                    [
+                      Constant(
+                        None,
+                        lineno=149,
+                        col_offset=21,
+                        end_lineno=149,
+                        end_col_offset=25)],
+                    lineno=149,
+                    col_offset=12,
+                    end_lineno=149,
+                    end_col_offset=25),
+                  Call(
+                    Name(
+                      'isinstance',
+                      Load(),
+                      lineno=150,
+                      col_offset=12,
+                      end_lineno=150,
+                      end_col_offset=22),
+                    [
+                      Name(
+                        'year',
+                        Load(),
+                        lineno=150,
+                        col_offset=23,
+                        end_lineno=150,
+                        end_col_offset=27),
+                      Tuple(
+                        [
+                          Name(
+                            'bytes',
+                            Load(),
+                            lineno=150,
+                            col_offset=30,
+                            end_lineno=150,
+                            end_col_offset=35),
+                          Name(
+                            'str',
+                            Load(),
+                            lineno=150,
+                            col_offset=37,
+                            end_lineno=150,
+                            end_col_offset=40)],
+                        Load(),
+                        lineno=150,
+                        col_offset=29,
+                        end_lineno=150,
+                        end_col_offset=41)],
+                    lineno=150,
+                    col_offset=12,
+                    end_lineno=150,
+                    end_col_offset=42),
+                  Compare(
+                    Call(
+                      Name(
+                        'len',
+                        Load(),
+                        lineno=150,
+                        col_offset=47,
+                        end_lineno=150,
+                        end_col_offset=50),
+                      [
+                        Name(
+                          'year',
+                          Load(),
+                          lineno=150,
+                          col_offset=51,
+                          end_lineno=150,
+                          end_col_offset=55)],
+                      lineno=150,
+                      col_offset=47,
+                      end_lineno=150,
+                      end_col_offset=56),
+                    [
+                      Eq()],
+                    [
+                      Constant(
+                        4,
+                        lineno=150,
+                        col_offset=60,
+                        end_lineno=150,
+                        end_col_offset=61)],
+                    lineno=150,
+                    col_offset=47,
+                    end_lineno=150,
+                    end_col_offset=61),
+                  Compare(
+                    Constant(
+                      1,
+                      lineno=151,
+                      col_offset=12,
+                      end_lineno=151,
+                      end_col_offset=13),
+                    [
+                      LtE(),
+                      LtE()],
+                    [
+                      Call(
+                        Name(
+                          'ord',
+                          Load(),
+                          lineno=151,
+                          col_offset=17,
+                          end_lineno=151,
+                          end_col_offset=20),
+                        [
+                          Subscript(
+                            Name(
+                              'year',
+                              Load(),
+                              lineno=151,
+                              col_offset=21,
+                              end_lineno=151,
+                              end_col_offset=25),
+                            Slice(
+                              Constant(
+                                2,
+                                lineno=151,
+                                col_offset=26,
+                                end_lineno=151,
+                                end_col_offset=27),
+                              Constant(
+                                3,
+                                lineno=151,
+                                col_offset=28,
+                                end_lineno=151,
+                                end_col_offset=29),
+                              lineno=151,
+                              col_offset=26,
+                              end_lineno=151,
+                              end_col_offset=29),
+                            Load(),
+                            lineno=151,
+                            col_offset=21,
+                            end_lineno=151,
+                            end_col_offset=30)],
+                        lineno=151,
+                        col_offset=17,
+                        end_lineno=151,
+                        end_col_offset=31),
+                      Constant(
+                        12,
+                        lineno=151,
+                        col_offset=35,
+                        end_lineno=151,
+                        end_col_offset=37)],
+                    lineno=151,
+                    col_offset=12,
+                    end_lineno=151,
+                    end_col_offset=37)],
+                lineno=149,
+                col_offset=12,
+                end_lineno=151,
+                end_col_offset=37),
+              [
+                If(
+                  Call(
+                    Name(
+                      'isinstance',
+                      Load(),
+                      lineno=153,
+                      col_offset=15,
+                      end_lineno=153,
+                      end_col_offset=25),
+                    [
+                      Name(
+                        'year',
+                        Load(),
+                        lineno=153,
+                        col_offset=26,
+                        end_lineno=153,
+                        end_col_offset=30),
+                      Name(
+                        'str',
+                        Load(),
+                        lineno=153,
+                        col_offset=32,
+                        end_lineno=153,
+                        end_col_offset=35)],
+                    lineno=153,
+                    col_offset=15,
+                    end_lineno=153,
+                    end_col_offset=36),
+                  [
+                    Try(
+                      [
+                        Assign(
+                          [
+                            Name(
+                              'year',
+                              Store(),
+                              lineno=155,
+                              col_offset=20,
+                              end_lineno=155,
+                              end_col_offset=24)],
+                          Call(
+                            Attribute(
+                              Name(
+                                'year',
+                                Load(),
+                                lineno=155,
+                                col_offset=27,
+                                end_lineno=155,
+                                end_col_offset=31),
+                              'encode',
+                              Load(),
+                              lineno=155,
+                              col_offset=27,
+                              end_lineno=155,
+                              end_col_offset=38),
+                            [
+                              Constant(
+                                'latin1',
+                                lineno=155,
+                                col_offset=39,
+                                end_lineno=155,
+                                end_col_offset=47)],
+                            lineno=155,
+                            col_offset=27,
+                            end_lineno=155,
+                            end_col_offset=48),
+                          lineno=155,
+                          col_offset=20,
+                          end_lineno=155,
+                          end_col_offset=48)],
+                      [
+                        ExceptHandler(
+                          Name(
+                            'UnicodeEncodeError',
+                            Load(),
+                            lineno=156,
+                            col_offset=23,
+                            end_lineno=156,
+                            end_col_offset=41),
+                          body=[
+                            Raise(
+                              Call(
+                                Name(
+                                  'ValueError',
+                                  Load(),
+                                  lineno=158,
+                                  col_offset=26,
+                                  end_lineno=158,
+                                  end_col_offset=36),
+                                [
+                                  Constant(
+                                    "Failed to encode latin1 string when unpickling a date object. pickle.load(data, encoding='latin1') is assumed.",
+                                    lineno=159,
+                                    col_offset=24,
+                                    end_lineno=161,
+                                    end_col_offset=74)],
+                                lineno=158,
+                                col_offset=26,
+                                end_lineno=161,
+                                end_col_offset=75),
+                              lineno=158,
+                              col_offset=20,
+                              end_lineno=161,
+                              end_col_offset=75)],
+                          lineno=156,
+                          col_offset=16,
+                          end_lineno=161,
+                          end_col_offset=75)],
+                      lineno=154,
+                      col_offset=16,
+                      end_lineno=161,
+                      end_col_offset=75)],
+                  lineno=153,
+                  col_offset=12,
+                  end_lineno=161,
+                  end_col_offset=75),
+                Assign(
+                  [
+                    Name(
+                      'self',
+                      Store(),
+                      lineno=162,
+                      col_offset=12,
+                      end_lineno=162,
+                      end_col_offset=16)],
+                  Call(
+                    Attribute(
+                      Name(
+                        'object',
+                        Load(),
+                        lineno=162,
+                        col_offset=19,
+                        end_lineno=162,
+                        end_col_offset=25),
+                      '__new__',
+                      Load(),
+                      lineno=162,
+                      col_offset=19,
+                      end_lineno=162,
+                      end_col_offset=33),
+                    [
+                      Name(
+                        'cls',
+                        Load(),
+                        lineno=162,
+                        col_offset=34,
+                        end_lineno=162,
+                        end_col_offset=37)],
+                    lineno=162,
+                    col_offset=19,
+                    end_lineno=162,
+                    end_col_offset=38),
+                  lineno=162,
+                  col_offset=12,
+                  end_lineno=162,
+                  end_col_offset=38),
+                Expr(
+                  Call(
+                    Attribute(
+                      Name(
+                        'self',
+                        Load(),
+                        lineno=163,
+                        col_offset=12,
+                        end_lineno=163,
+                        end_col_offset=16),
+                      '__setstate',
+                      Load(),
+                      lineno=163,
+                      col_offset=12,
+                      end_lineno=163,
+                      end_col_offset=27),
+                    [
+                      Name(
+                        'year',
+                        Load(),
+                        lineno=163,
+                        col_offset=28,
+                        end_lineno=163,
+                        end_col_offset=32)],
+                    lineno=163,
+                    col_offset=12,
+                    end_lineno=163,
+                    end_col_offset=33),
+                  lineno=163,
+                  col_offset=12,
+                  end_lineno=163,
+                  end_col_offset=33),
+                Assign(
+                  [
+                    Attribute(
+                      Name(
+                        'self',
+                        Load(),
+                        lineno=164,
+                        col_offset=12,
+                        end_lineno=164,
+                        end_col_offset=16),
+                      '_hashcode',
+                      Store(),
+                      lineno=164,
+                      col_offset=12,
+                      end_lineno=164,
+                      end_col_offset=26)],
+                  UnaryOp(
+                    USub(),
+                    Constant(
+                      1,
+                      lineno=164,
+                      col_offset=30,
+                      end_lineno=164,
+                      end_col_offset=31),
+                    lineno=164,
+                    col_offset=29,
+                    end_lineno=164,
+                    end_col_offset=31),
+                  lineno=164,
+                  col_offset=12,
+                  end_lineno=164,
+                  end_col_offset=31),
+                Return(
+                  Name(
+                    'self',
+                    Load(),
+                    lineno=165,
+                    col_offset=19,
+                    end_lineno=165,
+                    end_col_offset=23),
+                  lineno=165,
+                  col_offset=12,
+                  end_lineno=165,
+                  end_col_offset=23)],
+              lineno=149,
+              col_offset=8,
+              end_lineno=165,
+              end_col_offset=23)],
+          lineno=142,
+          col_offset=4,
+          end_lineno=165,
+          end_col_offset=23)],
+      lineno=112,
+      col_offset=0,
+      end_lineno=165,
+      end_col_offset=23),
+    FunctionDef(
+      'only_a_docstring',
+      arguments(),
+      [
+        Expr(
+          Constant(
+            'This s a docstring-only function.\n\n    It is valid, but only because of the docstring (an Expr).\n    Removing the docstring creates a fatal error during formatting\n    if the docstring is not replaced with pass.\n    ',
+            lineno=169,
+            col_offset=4,
+            end_lineno=174,
+            end_col_offset=7),
+          lineno=169,
+          col_offset=4,
+          end_lineno=174,
+          end_col_offset=7)],
+      lineno=168,
+      col_offset=0,
+      end_lineno=174,
+      end_col_offset=7),
+    ClassDef(
+      'docstringOny',
+      [],
+      [],
+      [
+        Expr(
+          Constant(
+            'This is a docstring-only class.\n\n    It should be normalized in the same way the function\n    def above is normalized.\n    ',
+            lineno=177,
+            col_offset=4,
+            end_lineno=181,
+            end_col_offset=7),
+          lineno=177,
+          col_offset=4,
+          end_lineno=181,
+          end_col_offset=7)],
+      lineno=176,
+      col_offset=0,
+      end_lineno=181,
+      end_col_offset=7),
+    ClassDef(
+      'docstringPlusmethod',
+      [],
+      [],
+      [
+        Expr(
+          Constant(
+            'This is a docstring-only class with a docstring-only method.\n\n    This should be normalized with a pass for\n    the class and a pass for the method.\n\n    ',
+            lineno=185,
+            col_offset=4,
+            end_lineno=190,
+            end_col_offset=7),
+          lineno=185,
+          col_offset=4,
+          end_lineno=190,
+          end_col_offset=7),
+        FunctionDef(
+          'docstring_only_method',
+          arguments(
+            [],
+            [
+              arg(
+                'self',
+                lineno=192,
+                col_offset=30,
+                end_lineno=192,
+                end_col_offset=34)]),
+          [
+            Expr(
+              Constant(
+                'This is a docstring only method.\n\n        This should be normalized with a pass.\n        ',
+                lineno=193,
+                col_offset=8,
+                end_lineno=196,
+                end_col_offset=11),
+              lineno=193,
+              col_offset=8,
+              end_lineno=196,
+              end_col_offset=11)],
+          lineno=192,
+          col_offset=4,
+          end_lineno=196,
+          end_col_offset=11)],
+      lineno=184,
+      col_offset=0,
+      end_lineno=196,
+      end_col_offset=11),
+    FunctionDef(
+      'docstring_plus_ellipsis',
+      arguments(),
+      [
+        Expr(
+          Constant(
+            'Function using an Ellipsis object.\n\n    This is a def that uses a docstring and an ellipsis in luie \n    of pass.  The normalizer should remove the docstring but keep \n    the ellipsis.\n    ',
+            lineno=200,
+            col_offset=4,
+            end_lineno=205,
+            end_col_offset=7),
+          lineno=200,
+          col_offset=4,
+          end_lineno=205,
+          end_col_offset=7),
+        Expr(
+          Constant(
+            Ellipsis,
+            lineno=206,
+            col_offset=4,
+            end_lineno=206,
+            end_col_offset=7),
+          lineno=206,
+          col_offset=4,
+          end_lineno=206,
+          end_col_offset=7)],
+      lineno=199,
+      col_offset=0,
+      end_lineno=206,
+      end_col_offset=7),
+    ClassDef(
+      'docstringPlusmethod',
+      [],
+      [],
+      [
+        Expr(
+          Constant(
+            'This is a docstring class with a docstring method.\n\n    Ellipsis is used for a code placeholder.\n    This should be normalized with the Ellipsis retained.\n\n    ',
+            lineno=210,
+            col_offset=4,
+            end_lineno=215,
+            end_col_offset=7),
+          lineno=210,
+          col_offset=4,
+          end_lineno=215,
+          end_col_offset=7),
+        Expr(
+          Constant(
+            Ellipsis,
+            lineno=216,
+            col_offset=4,
+            end_lineno=216,
+            end_col_offset=7),
+          lineno=216,
+          col_offset=4,
+          end_lineno=216,
+          end_col_offset=7),
+        FunctionDef(
+          'docstring_only_method',
+          arguments(
+            [],
+            [
+              arg(
+                'self',
+                lineno=218,
+                col_offset=30,
+                end_lineno=218,
+                end_col_offset=34)]),
+          [
+            Expr(
+              Constant(
+                'This is a docstring with Ellipsis method.\n\n        This should be normalized with the Ellipsis retained.\n        ',
+                lineno=219,
+                col_offset=8,
+                end_lineno=222,
+                end_col_offset=11),
+              lineno=219,
+              col_offset=8,
+              end_lineno=222,
+              end_col_offset=11),
+            Expr(
+              Constant(
+                Ellipsis,
+                lineno=223,
+                col_offset=8,
+                end_lineno=223,
+                end_col_offset=11),
+              lineno=223,
+              col_offset=8,
+              end_lineno=223,
+              end_col_offset=11)],
+          lineno=218,
+          col_offset=4,
+          end_lineno=223,
+          end_col_offset=11)],
+      lineno=209,
+      col_offset=0,
+      end_lineno=223,
+      end_col_offset=11)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -486,42 +1496,38 @@ Module(
         [
           arg(
             'placeholder_1',
-            lineno=8,
+            lineno=10,
             col_offset=18,
-            end_lineno=8,
-            end_col_offset=22)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_lineno=10,
+            end_col_offset=22)]),
       [
         Return(
           BinOp(
             Constant(
               'un',
-              lineno=17,
+              lineno=19,
               col_offset=11,
-              end_lineno=17,
+              end_lineno=19,
               end_col_offset=15),
             Add(),
             Name(
               'placeholder_1',
               Load(),
-              lineno=17,
+              lineno=19,
               col_offset=18,
-              end_lineno=17,
+              end_lineno=19,
               end_col_offset=22),
-            lineno=17,
+            lineno=19,
             col_offset=11,
-            end_lineno=17,
+            end_lineno=19,
             end_col_offset=22),
-          lineno=17,
+          lineno=19,
           col_offset=4,
-          end_lineno=17,
+          end_lineno=19,
           end_col_offset=22)],
-      [],
-      lineno=8,
+      lineno=10,
       col_offset=0,
-      end_lineno=17,
+      end_lineno=19,
       end_col_offset=22),
     FunctionDef(
       'placeholder_2',
@@ -530,32 +1536,29 @@ Module(
         [
           arg(
             'placeholder_3',
-            lineno=20,
+            lineno=22,
             col_offset=21,
-            end_lineno=20,
-            end_col_offset=32)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_lineno=22,
+            end_col_offset=32)]),
       [
         Assign(
           [
             Name(
               'placeholder_4',
               Store(),
-              lineno=32,
+              lineno=34,
               col_offset=4,
-              end_lineno=32,
+              end_lineno=34,
               end_col_offset=21)],
           Constant(
             'This is a multi-line string.\n    This should NOT get cleaned as a docstring, but retained, because it is assigned\n    a name, and is therefore a plain string, and not a docstring.',
-            lineno=32,
+            lineno=34,
             col_offset=24,
-            end_lineno=34,
+            end_lineno=36,
             end_col_offset=68),
-          lineno=32,
+          lineno=34,
           col_offset=4,
-          end_lineno=34,
+          end_lineno=36,
           end_col_offset=68),
         Return(
           Call(
@@ -563,61 +1566,59 @@ Module(
               BinOp(
                 Constant(
                   ' :: ',
-                  lineno=36,
+                  lineno=38,
                   col_offset=12,
-                  end_lineno=36,
+                  end_lineno=38,
                   end_col_offset=18),
                 Add(),
                 Subscript(
                   Name(
                     'placeholder_3',
                     Load(),
-                    lineno=36,
+                    lineno=38,
                     col_offset=21,
-                    end_lineno=36,
+                    end_lineno=38,
                     end_col_offset=32),
                   Constant(
                     0,
-                    lineno=36,
+                    lineno=38,
                     col_offset=33,
-                    end_lineno=36,
+                    end_lineno=38,
                     end_col_offset=34),
                   Load(),
-                  lineno=36,
+                  lineno=38,
                   col_offset=21,
-                  end_lineno=36,
+                  end_lineno=38,
                   end_col_offset=35),
-                lineno=36,
+                lineno=38,
                 col_offset=12,
-                end_lineno=36,
+                end_lineno=38,
                 end_col_offset=35),
               'join',
               Load(),
-              lineno=36,
+              lineno=38,
               col_offset=11,
-              end_lineno=36,
+              end_lineno=38,
               end_col_offset=41),
             [
               Name(
                 'placeholder_3',
                 Load(),
-                lineno=36,
+                lineno=38,
                 col_offset=42,
-                end_lineno=36,
+                end_lineno=38,
                 end_col_offset=53)],
-            [],
-            lineno=36,
+            lineno=38,
             col_offset=11,
-            end_lineno=36,
+            end_lineno=38,
             end_col_offset=54),
-          lineno=36,
+          lineno=38,
           col_offset=4,
-          end_lineno=36,
+          end_lineno=38,
           end_col_offset=54)],
-      [],
-      lineno=20,
+      lineno=22,
       col_offset=0,
-      end_lineno=36,
+      end_lineno=38,
       end_col_offset=54),
     FunctionDef(
       'placeholder_5',
@@ -626,32 +1627,29 @@ Module(
         [
           arg(
             'placeholder_1',
-            lineno=39,
+            lineno=41,
             col_offset=23,
-            end_lineno=39,
-            end_col_offset=27)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_lineno=41,
+            end_col_offset=27)]),
       [
         Assign(
           [
             Name(
               'placeholder_6',
               Store(),
-              lineno=48,
+              lineno=50,
               col_offset=4,
-              end_lineno=48,
+              end_lineno=50,
               end_col_offset=23)],
           Constant(
             'This is a multi-line string constant.\n       This should NOT get cleaned as a docstring, but retained, because it is assigned\n       a name, and is therefore a plain string, and not a docstring.',
-            lineno=48,
+            lineno=50,
             col_offset=26,
-            end_lineno=50,
+            end_lineno=52,
             end_col_offset=71),
-          lineno=48,
+          lineno=50,
           col_offset=4,
-          end_lineno=50,
+          end_lineno=52,
           end_col_offset=71),
         Return(
           IfExp(
@@ -660,124 +1658,123 @@ Module(
                 Name(
                   'placeholder_1',
                   Load(),
-                  lineno=52,
+                  lineno=54,
                   col_offset=24,
-                  end_lineno=52,
+                  end_lineno=54,
                   end_col_offset=28),
                 UnaryOp(
                   USub(),
                   Constant(
                     5,
-                    lineno=52,
+                    lineno=54,
                     col_offset=30,
-                    end_lineno=52,
+                    end_lineno=54,
                     end_col_offset=31),
-                  lineno=52,
+                  lineno=54,
                   col_offset=29,
-                  end_lineno=52,
+                  end_lineno=54,
                   end_col_offset=31),
                 Load(),
-                lineno=52,
+                lineno=54,
                 col_offset=24,
-                end_lineno=52,
+                end_lineno=54,
                 end_col_offset=32),
               [
                 NotEq()],
               [
                 Constant(
                   'i',
-                  lineno=52,
+                  lineno=54,
                   col_offset=36,
-                  end_lineno=52,
+                  end_lineno=54,
                   end_col_offset=39)],
-              lineno=52,
+              lineno=54,
               col_offset=24,
-              end_lineno=52,
+              end_lineno=54,
               end_col_offset=39),
             Subscript(
               Name(
                 'placeholder_1',
                 Load(),
-                lineno=52,
+                lineno=54,
                 col_offset=11,
-                end_lineno=52,
+                end_lineno=54,
                 end_col_offset=15),
               Slice(
                 upper=UnaryOp(
                   USub(),
                   Constant(
                     4,
-                    lineno=52,
+                    lineno=54,
                     col_offset=18,
-                    end_lineno=52,
+                    end_lineno=54,
                     end_col_offset=19),
-                  lineno=52,
+                  lineno=54,
                   col_offset=17,
-                  end_lineno=52,
+                  end_lineno=54,
                   end_col_offset=19),
-                lineno=52,
+                lineno=54,
                 col_offset=16,
-                end_lineno=52,
+                end_lineno=54,
                 end_col_offset=19),
               Load(),
-              lineno=52,
+              lineno=54,
               col_offset=11,
-              end_lineno=52,
+              end_lineno=54,
               end_col_offset=20),
             BinOp(
               Subscript(
                 Name(
                   'placeholder_1',
                   Load(),
-                  lineno=52,
+                  lineno=54,
                   col_offset=45,
-                  end_lineno=52,
+                  end_lineno=54,
                   end_col_offset=49),
                 Slice(
                   upper=UnaryOp(
                     USub(),
                     Constant(
                       5,
-                      lineno=52,
+                      lineno=54,
                       col_offset=52,
-                      end_lineno=52,
+                      end_lineno=54,
                       end_col_offset=53),
-                    lineno=52,
+                    lineno=54,
                     col_offset=51,
-                    end_lineno=52,
+                    end_lineno=54,
                     end_col_offset=53),
-                  lineno=52,
+                  lineno=54,
                   col_offset=50,
-                  end_lineno=52,
+                  end_lineno=54,
                   end_col_offset=53),
                 Load(),
-                lineno=52,
+                lineno=54,
                 col_offset=45,
-                end_lineno=52,
+                end_lineno=54,
                 end_col_offset=54),
               Add(),
               Constant(
                 'y',
-                lineno=52,
+                lineno=54,
                 col_offset=57,
-                end_lineno=52,
+                end_lineno=54,
                 end_col_offset=60),
-              lineno=52,
+              lineno=54,
               col_offset=45,
-              end_lineno=52,
+              end_lineno=54,
               end_col_offset=60),
-            lineno=52,
+            lineno=54,
             col_offset=11,
-            end_lineno=52,
+            end_lineno=54,
             end_col_offset=60),
-          lineno=52,
+          lineno=54,
           col_offset=4,
-          end_lineno=52,
+          end_lineno=54,
           end_col_offset=60)],
-      [],
-      lineno=39,
+      lineno=41,
       col_offset=0,
-      end_lineno=52,
+      end_lineno=54,
       end_col_offset=60),
     FunctionDef(
       'placeholder_7',
@@ -786,19 +1783,16 @@ Module(
         [
           arg(
             'placeholder_8',
-            lineno=55,
+            lineno=57,
             col_offset=22,
-            end_lineno=55,
+            end_lineno=57,
             end_col_offset=30),
           arg(
             'placeholder_9',
-            lineno=55,
+            lineno=57,
             col_offset=32,
-            end_lineno=55,
-            end_col_offset=37)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_lineno=57,
+            end_col_offset=37)]),
       [
         Return(
           BinOp(
@@ -810,71 +1804,927 @@ Module(
                       Name(
                         'placeholder_8',
                         Load(),
-                        lineno=67,
+                        lineno=69,
                         col_offset=11,
-                        end_lineno=67,
+                        end_lineno=69,
                         end_col_offset=19),
                       'split',
                       Load(),
-                      lineno=67,
+                      lineno=69,
                       col_offset=11,
-                      end_lineno=67,
+                      end_lineno=69,
                       end_col_offset=25),
-                    [],
-                    [],
-                    lineno=67,
+                    lineno=69,
                     col_offset=11,
-                    end_lineno=67,
+                    end_lineno=69,
                     end_col_offset=27),
                   Name(
                     'placeholder_9',
                     Load(),
-                    lineno=67,
+                    lineno=69,
                     col_offset=28,
-                    end_lineno=67,
+                    end_lineno=69,
                     end_col_offset=33),
                   Load(),
-                  lineno=67,
+                  lineno=69,
                   col_offset=11,
-                  end_lineno=67,
+                  end_lineno=69,
                   end_col_offset=34),
                 'strip',
                 Load(),
-                lineno=67,
+                lineno=69,
                 col_offset=11,
-                end_lineno=67,
+                end_lineno=69,
                 end_col_offset=40),
               [
                 Constant(
                   '.',
-                  lineno=67,
+                  lineno=69,
                   col_offset=41,
-                  end_lineno=67,
+                  end_lineno=69,
                   end_col_offset=44)],
-              [],
-              lineno=67,
+              lineno=69,
               col_offset=11,
-              end_lineno=67,
+              end_lineno=69,
               end_col_offset=45),
             Add(),
             Constant(
               'en',
-              lineno=67,
+              lineno=69,
               col_offset=48,
-              end_lineno=67,
+              end_lineno=69,
               end_col_offset=52),
-            lineno=67,
+            lineno=69,
             col_offset=11,
-            end_lineno=67,
+            end_lineno=69,
             end_col_offset=52),
-          lineno=67,
+          lineno=69,
           col_offset=4,
-          end_lineno=67,
+          end_lineno=69,
           end_col_offset=52)],
-      [],
-      lineno=55,
+      lineno=57,
       col_offset=0,
-      end_lineno=67,
-      end_col_offset=52)],
-  [])
+      end_lineno=69,
+      end_col_offset=52),
+    FunctionDef(
+      'placeholder_10',
+      arguments(),
+      [
+        Try(
+          [
+            Assign(
+              [
+                Name(
+                  'placeholder_11',
+                  Store(),
+                  lineno=97,
+                  col_offset=12,
+                  end_lineno=97,
+                  end_col_offset=19)],
+              GeneratorExp(
+                Call(
+                  Attribute(
+                    Name(
+                      'placeholder_12',
+                      Load(),
+                      lineno=97,
+                      col_offset=23,
+                      end_lineno=97,
+                      end_col_offset=26),
+                    'split',
+                    Load(),
+                    lineno=97,
+                    col_offset=23,
+                    end_lineno=97,
+                    end_col_offset=32),
+                  [
+                    Constant(
+                      ';',
+                      lineno=97,
+                      col_offset=33,
+                      end_lineno=97,
+                      end_col_offset=36)],
+                  lineno=97,
+                  col_offset=23,
+                  end_lineno=97,
+                  end_col_offset=37),
+                [
+                  comprehension(
+                    Name(
+                      'placeholder_12',
+                      Store(),
+                      lineno=97,
+                      col_offset=42,
+                      end_lineno=97,
+                      end_col_offset=45),
+                    Name(
+                      'tournament_results',
+                      Load(),
+                      lineno=97,
+                      col_offset=49,
+                      end_lineno=97,
+                      end_col_offset=67),
+                    [],
+                    0)],
+                lineno=97,
+                col_offset=22,
+                end_lineno=97,
+                end_col_offset=68),
+              lineno=97,
+              col_offset=12,
+              end_lineno=97,
+              end_col_offset=68),
+            Assign(
+              [
+                Name(
+                  'placeholder_13',
+                  Store(),
+                  lineno=98,
+                  col_offset=12,
+                  end_lineno=98,
+                  end_col_offset=28)],
+              Call(
+                Name(
+                  'compile_statistics',
+                  Load(),
+                  lineno=98,
+                  col_offset=31,
+                  end_lineno=98,
+                  end_col_offset=49),
+                [
+                  Name(
+                    'placeholder_11',
+                    Load(),
+                    lineno=98,
+                    col_offset=50,
+                    end_lineno=98,
+                    end_col_offset=57)],
+                lineno=98,
+                col_offset=31,
+                end_lineno=98,
+                end_col_offset=58),
+              lineno=98,
+              col_offset=12,
+              end_lineno=98,
+              end_col_offset=58)],
+          [
+            ExceptHandler(
+              Name(
+                'AttributeError',
+                Load(),
+                lineno=100,
+                col_offset=15,
+                end_lineno=100,
+                end_col_offset=29),
+              body=[
+                Expr(
+                  Call(
+                    Attribute(
+                      Name(
+                        'logger',
+                        Load(),
+                        lineno=101,
+                        col_offset=12,
+                        end_lineno=101,
+                        end_col_offset=18),
+                      'exception',
+                      Load(),
+                      lineno=101,
+                      col_offset=12,
+                      end_lineno=101,
+                      end_col_offset=28),
+                    [
+                      JoinedStr(
+                        [
+                          Constant(
+                            'There is a problem with the tournament results string: ',
+                            lineno=101,
+                            col_offset=31,
+                            end_lineno=101,
+                            end_col_offset=86)],
+                        lineno=101,
+                        col_offset=29,
+                        end_lineno=101,
+                        end_col_offset=87)],
+                    lineno=101,
+                    col_offset=12,
+                    end_lineno=101,
+                    end_col_offset=88),
+                  lineno=101,
+                  col_offset=12,
+                  end_lineno=101,
+                  end_col_offset=88),
+                Raise(
+                  lineno=102,
+                  col_offset=12,
+                  end_lineno=102,
+                  end_col_offset=17)],
+              lineno=100,
+              col_offset=8,
+              end_lineno=102,
+              end_col_offset=17),
+            ExceptHandler(
+              Name(
+                'IndexError',
+                Load(),
+                lineno=104,
+                col_offset=15,
+                end_lineno=104,
+                end_col_offset=25),
+              body=[
+                Expr(
+                  Call(
+                    Attribute(
+                      Name(
+                        'logger',
+                        Load(),
+                        lineno=105,
+                        col_offset=12,
+                        end_lineno=105,
+                        end_col_offset=18),
+                      'exception',
+                      Load(),
+                      lineno=105,
+                      col_offset=12,
+                      end_lineno=105,
+                      end_col_offset=28),
+                    [
+                      JoinedStr(
+                        [
+                          Constant(
+                            'Compiling team statistics failed: ',
+                            lineno=105,
+                            col_offset=31,
+                            end_lineno=105,
+                            end_col_offset=65)],
+                        lineno=105,
+                        col_offset=29,
+                        end_lineno=105,
+                        end_col_offset=66)],
+                    lineno=105,
+                    col_offset=12,
+                    end_lineno=105,
+                    end_col_offset=67),
+                  lineno=105,
+                  col_offset=12,
+                  end_lineno=105,
+                  end_col_offset=67),
+                Raise(
+                  lineno=106,
+                  col_offset=12,
+                  end_lineno=106,
+                  end_col_offset=17)],
+              lineno=104,
+              col_offset=8,
+              end_lineno=106,
+              end_col_offset=17)],
+          lineno=96,
+          col_offset=8,
+          end_lineno=106,
+          end_col_offset=17),
+        Return(
+          Call(
+            Name(
+              'make_report',
+              Load(),
+              lineno=108,
+              col_offset=15,
+              end_lineno=108,
+              end_col_offset=26),
+            [
+              Name(
+                'placeholder_13',
+                Load(),
+                lineno=108,
+                col_offset=27,
+                end_lineno=108,
+                end_col_offset=43)],
+            lineno=108,
+            col_offset=15,
+            end_lineno=108,
+            end_col_offset=44),
+          lineno=108,
+          col_offset=8,
+          end_lineno=108,
+          end_col_offset=44)],
+      lineno=73,
+      col_offset=0,
+      end_lineno=108,
+      end_col_offset=44),
+    ClassDef(
+      'placeholder_14',
+      [],
+      [],
+      [
+        Assign(
+          [
+            Name(
+              'placeholder_15',
+              Store(),
+              lineno=140,
+              col_offset=4,
+              end_lineno=140,
+              end_col_offset=13)],
+          Tuple(
+            [
+              Constant(
+                '_year',
+                lineno=140,
+                col_offset=16,
+                end_lineno=140,
+                end_col_offset=23),
+              Constant(
+                '_month',
+                lineno=140,
+                col_offset=25,
+                end_lineno=140,
+                end_col_offset=33),
+              Constant(
+                '_day',
+                lineno=140,
+                col_offset=35,
+                end_lineno=140,
+                end_col_offset=41),
+              Constant(
+                '_hashcode',
+                lineno=140,
+                col_offset=43,
+                end_lineno=140,
+                end_col_offset=54)],
+            Load(),
+            lineno=140,
+            col_offset=16,
+            end_lineno=140,
+            end_col_offset=54),
+          lineno=140,
+          col_offset=4,
+          end_lineno=140,
+          end_col_offset=54),
+        FunctionDef(
+          'placeholder_16',
+          arguments(
+            [],
+            [
+              arg(
+                'placeholder_17',
+                lineno=142,
+                col_offset=16,
+                end_lineno=142,
+                end_col_offset=19),
+              arg(
+                'placeholder_18',
+                lineno=142,
+                col_offset=21,
+                end_lineno=142,
+                end_col_offset=25),
+              arg(
+                'placeholder_19',
+                lineno=142,
+                col_offset=27,
+                end_lineno=142,
+                end_col_offset=32),
+              arg(
+                'placeholder_20',
+                lineno=142,
+                col_offset=39,
+                end_lineno=142,
+                end_col_offset=42)],
+            defaults=[
+              Constant(
+                None,
+                lineno=142,
+                col_offset=33,
+                end_lineno=142,
+                end_col_offset=37),
+              Constant(
+                None,
+                lineno=142,
+                col_offset=43,
+                end_lineno=142,
+                end_col_offset=47)]),
+          [
+            If(
+              BoolOp(
+                And(),
+                [
+                  Compare(
+                    Name(
+                      'placeholder_19',
+                      Load(),
+                      lineno=149,
+                      col_offset=12,
+                      end_lineno=149,
+                      end_col_offset=17),
+                    [
+                      Is()],
+                    [
+                      Constant(
+                        None,
+                        lineno=149,
+                        col_offset=21,
+                        end_lineno=149,
+                        end_col_offset=25)],
+                    lineno=149,
+                    col_offset=12,
+                    end_lineno=149,
+                    end_col_offset=25),
+                  Call(
+                    Name(
+                      'isinstance',
+                      Load(),
+                      lineno=150,
+                      col_offset=12,
+                      end_lineno=150,
+                      end_col_offset=22),
+                    [
+                      Name(
+                        'placeholder_18',
+                        Load(),
+                        lineno=150,
+                        col_offset=23,
+                        end_lineno=150,
+                        end_col_offset=27),
+                      Tuple(
+                        [
+                          Name(
+                            'bytes',
+                            Load(),
+                            lineno=150,
+                            col_offset=30,
+                            end_lineno=150,
+                            end_col_offset=35),
+                          Name(
+                            'str',
+                            Load(),
+                            lineno=150,
+                            col_offset=37,
+                            end_lineno=150,
+                            end_col_offset=40)],
+                        Load(),
+                        lineno=150,
+                        col_offset=29,
+                        end_lineno=150,
+                        end_col_offset=41)],
+                    lineno=150,
+                    col_offset=12,
+                    end_lineno=150,
+                    end_col_offset=42),
+                  Compare(
+                    Call(
+                      Name(
+                        'len',
+                        Load(),
+                        lineno=150,
+                        col_offset=47,
+                        end_lineno=150,
+                        end_col_offset=50),
+                      [
+                        Name(
+                          'placeholder_18',
+                          Load(),
+                          lineno=150,
+                          col_offset=51,
+                          end_lineno=150,
+                          end_col_offset=55)],
+                      lineno=150,
+                      col_offset=47,
+                      end_lineno=150,
+                      end_col_offset=56),
+                    [
+                      Eq()],
+                    [
+                      Constant(
+                        4,
+                        lineno=150,
+                        col_offset=60,
+                        end_lineno=150,
+                        end_col_offset=61)],
+                    lineno=150,
+                    col_offset=47,
+                    end_lineno=150,
+                    end_col_offset=61),
+                  Compare(
+                    Constant(
+                      1,
+                      lineno=151,
+                      col_offset=12,
+                      end_lineno=151,
+                      end_col_offset=13),
+                    [
+                      LtE(),
+                      LtE()],
+                    [
+                      Call(
+                        Name(
+                          'ord',
+                          Load(),
+                          lineno=151,
+                          col_offset=17,
+                          end_lineno=151,
+                          end_col_offset=20),
+                        [
+                          Subscript(
+                            Name(
+                              'placeholder_18',
+                              Load(),
+                              lineno=151,
+                              col_offset=21,
+                              end_lineno=151,
+                              end_col_offset=25),
+                            Slice(
+                              Constant(
+                                2,
+                                lineno=151,
+                                col_offset=26,
+                                end_lineno=151,
+                                end_col_offset=27),
+                              Constant(
+                                3,
+                                lineno=151,
+                                col_offset=28,
+                                end_lineno=151,
+                                end_col_offset=29),
+                              lineno=151,
+                              col_offset=26,
+                              end_lineno=151,
+                              end_col_offset=29),
+                            Load(),
+                            lineno=151,
+                            col_offset=21,
+                            end_lineno=151,
+                            end_col_offset=30)],
+                        lineno=151,
+                        col_offset=17,
+                        end_lineno=151,
+                        end_col_offset=31),
+                      Constant(
+                        12,
+                        lineno=151,
+                        col_offset=35,
+                        end_lineno=151,
+                        end_col_offset=37)],
+                    lineno=151,
+                    col_offset=12,
+                    end_lineno=151,
+                    end_col_offset=37)],
+                lineno=149,
+                col_offset=12,
+                end_lineno=151,
+                end_col_offset=37),
+              [
+                If(
+                  Call(
+                    Name(
+                      'isinstance',
+                      Load(),
+                      lineno=153,
+                      col_offset=15,
+                      end_lineno=153,
+                      end_col_offset=25),
+                    [
+                      Name(
+                        'placeholder_18',
+                        Load(),
+                        lineno=153,
+                        col_offset=26,
+                        end_lineno=153,
+                        end_col_offset=30),
+                      Name(
+                        'str',
+                        Load(),
+                        lineno=153,
+                        col_offset=32,
+                        end_lineno=153,
+                        end_col_offset=35)],
+                    lineno=153,
+                    col_offset=15,
+                    end_lineno=153,
+                    end_col_offset=36),
+                  [
+                    Try(
+                      [
+                        Assign(
+                          [
+                            Name(
+                              'placeholder_18',
+                              Store(),
+                              lineno=155,
+                              col_offset=20,
+                              end_lineno=155,
+                              end_col_offset=24)],
+                          Call(
+                            Attribute(
+                              Name(
+                                'placeholder_18',
+                                Load(),
+                                lineno=155,
+                                col_offset=27,
+                                end_lineno=155,
+                                end_col_offset=31),
+                              'encode',
+                              Load(),
+                              lineno=155,
+                              col_offset=27,
+                              end_lineno=155,
+                              end_col_offset=38),
+                            [
+                              Constant(
+                                'latin1',
+                                lineno=155,
+                                col_offset=39,
+                                end_lineno=155,
+                                end_col_offset=47)],
+                            lineno=155,
+                            col_offset=27,
+                            end_lineno=155,
+                            end_col_offset=48),
+                          lineno=155,
+                          col_offset=20,
+                          end_lineno=155,
+                          end_col_offset=48)],
+                      [
+                        ExceptHandler(
+                          Name(
+                            'UnicodeEncodeError',
+                            Load(),
+                            lineno=156,
+                            col_offset=23,
+                            end_lineno=156,
+                            end_col_offset=41),
+                          body=[
+                            Raise(
+                              Call(
+                                Name(
+                                  'ValueError',
+                                  Load(),
+                                  lineno=158,
+                                  col_offset=26,
+                                  end_lineno=158,
+                                  end_col_offset=36),
+                                [
+                                  Constant(
+                                    "Failed to encode latin1 string when unpickling a date object. pickle.load(data, encoding='latin1') is assumed.",
+                                    lineno=159,
+                                    col_offset=24,
+                                    end_lineno=161,
+                                    end_col_offset=74)],
+                                lineno=158,
+                                col_offset=26,
+                                end_lineno=161,
+                                end_col_offset=75),
+                              lineno=158,
+                              col_offset=20,
+                              end_lineno=161,
+                              end_col_offset=75)],
+                          lineno=156,
+                          col_offset=16,
+                          end_lineno=161,
+                          end_col_offset=75)],
+                      lineno=154,
+                      col_offset=16,
+                      end_lineno=161,
+                      end_col_offset=75)],
+                  lineno=153,
+                  col_offset=12,
+                  end_lineno=161,
+                  end_col_offset=75),
+                Assign(
+                  [
+                    Name(
+                      'self',
+                      Store(),
+                      lineno=162,
+                      col_offset=12,
+                      end_lineno=162,
+                      end_col_offset=16)],
+                  Call(
+                    Attribute(
+                      Name(
+                        'object',
+                        Load(),
+                        lineno=162,
+                        col_offset=19,
+                        end_lineno=162,
+                        end_col_offset=25),
+                      'placeholder_16',
+                      Load(),
+                      lineno=162,
+                      col_offset=19,
+                      end_lineno=162,
+                      end_col_offset=33),
+                    [
+                      Name(
+                        'placeholder_17',
+                        Load(),
+                        lineno=162,
+                        col_offset=34,
+                        end_lineno=162,
+                        end_col_offset=37)],
+                    lineno=162,
+                    col_offset=19,
+                    end_lineno=162,
+                    end_col_offset=38),
+                  lineno=162,
+                  col_offset=12,
+                  end_lineno=162,
+                  end_col_offset=38),
+                Expr(
+                  Call(
+                    Attribute(
+                      Name(
+                        'self',
+                        Load(),
+                        lineno=163,
+                        col_offset=12,
+                        end_lineno=163,
+                        end_col_offset=16),
+                      '__setstate',
+                      Load(),
+                      lineno=163,
+                      col_offset=12,
+                      end_lineno=163,
+                      end_col_offset=27),
+                    [
+                      Name(
+                        'placeholder_18',
+                        Load(),
+                        lineno=163,
+                        col_offset=28,
+                        end_lineno=163,
+                        end_col_offset=32)],
+                    lineno=163,
+                    col_offset=12,
+                    end_lineno=163,
+                    end_col_offset=33),
+                  lineno=163,
+                  col_offset=12,
+                  end_lineno=163,
+                  end_col_offset=33),
+                Assign(
+                  [
+                    Attribute(
+                      Name(
+                        'self',
+                        Load(),
+                        lineno=164,
+                        col_offset=12,
+                        end_lineno=164,
+                        end_col_offset=16),
+                      'placeholder_21',
+                      Store(),
+                      lineno=164,
+                      col_offset=12,
+                      end_lineno=164,
+                      end_col_offset=26)],
+                  UnaryOp(
+                    USub(),
+                    Constant(
+                      1,
+                      lineno=164,
+                      col_offset=30,
+                      end_lineno=164,
+                      end_col_offset=31),
+                    lineno=164,
+                    col_offset=29,
+                    end_lineno=164,
+                    end_col_offset=31),
+                  lineno=164,
+                  col_offset=12,
+                  end_lineno=164,
+                  end_col_offset=31),
+                Return(
+                  Name(
+                    'self',
+                    Load(),
+                    lineno=165,
+                    col_offset=19,
+                    end_lineno=165,
+                    end_col_offset=23),
+                  lineno=165,
+                  col_offset=12,
+                  end_lineno=165,
+                  end_col_offset=23)],
+              lineno=149,
+              col_offset=8,
+              end_lineno=165,
+              end_col_offset=23)],
+          lineno=142,
+          col_offset=4,
+          end_lineno=165,
+          end_col_offset=23)],
+      lineno=112,
+      col_offset=0,
+      end_lineno=165,
+      end_col_offset=23),
+    FunctionDef(
+      'placeholder_22',
+      arguments(),
+      [
+        Pass()],
+      lineno=168,
+      col_offset=0,
+      end_lineno=174,
+      end_col_offset=7),
+    ClassDef(
+      'placeholder_23',
+      [],
+      [],
+      [
+        Pass()],
+      lineno=176,
+      col_offset=0,
+      end_lineno=181,
+      end_col_offset=7),
+    ClassDef(
+      'placeholder_24',
+      [],
+      [],
+      [
+        FunctionDef(
+          'placeholder_25',
+          arguments(
+            [],
+            [
+              arg(
+                'self',
+                lineno=192,
+                col_offset=30,
+                end_lineno=192,
+                end_col_offset=34)]),
+          [
+            Pass()],
+          lineno=192,
+          col_offset=4,
+          end_lineno=196,
+          end_col_offset=11)],
+      lineno=184,
+      col_offset=0,
+      end_lineno=196,
+      end_col_offset=11),
+    FunctionDef(
+      'placeholder_26',
+      arguments(),
+      [
+        Expr(
+          Constant(
+            Ellipsis,
+            lineno=206,
+            col_offset=4,
+            end_lineno=206,
+            end_col_offset=7),
+          lineno=206,
+          col_offset=4,
+          end_lineno=206,
+          end_col_offset=7)],
+      lineno=199,
+      col_offset=0,
+      end_lineno=206,
+      end_col_offset=7),
+    ClassDef(
+      'placeholder_24',
+      [],
+      [],
+      [
+        Expr(
+          Constant(
+            Ellipsis,
+            lineno=216,
+            col_offset=4,
+            end_lineno=216,
+            end_col_offset=7),
+          lineno=216,
+          col_offset=4,
+          end_lineno=216,
+          end_col_offset=7),
+        FunctionDef(
+          'placeholder_25',
+          arguments(
+            [],
+            [
+              arg(
+                'self',
+                lineno=218,
+                col_offset=30,
+                end_lineno=218,
+                end_col_offset=34)]),
+          [
+            Expr(
+              Constant(
+                Ellipsis,
+                lineno=223,
+                col_offset=8,
+                end_lineno=223,
+                end_col_offset=11),
+              lineno=223,
+              col_offset=8,
+              end_lineno=223,
+              end_col_offset=11)],
+          lineno=218,
+          col_offset=4,
+          end_lineno=223,
+          end_col_offset=11)],
+      lineno=209,
+      col_offset=0,
+      end_lineno=223,
+      end_col_offset=11)])
 ## END NORMALIZED TREE ##
