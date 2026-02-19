@@ -67,10 +67,7 @@ Module(
             lineno=8,
             col_offset=18,
             end_lineno=8,
-            end_col_offset=22)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=22)]),
       [
         Expr(
           Constant(
@@ -194,7 +191,6 @@ Module(
                         col_offset=20,
                         end_lineno=26,
                         end_col_offset=24)],
-                    [],
                     lineno=26,
                     col_offset=16,
                     end_lineno=26,
@@ -223,7 +219,6 @@ Module(
           col_offset=4,
           end_lineno=28,
           end_col_offset=16)],
-      [],
       lineno=8,
       col_offset=0,
       end_lineno=28,
@@ -244,10 +239,7 @@ Module(
             lineno=31,
             col_offset=26,
             end_lineno=31,
-            end_col_offset=34)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=34)]),
       [
         Expr(
           Constant(
@@ -285,7 +277,6 @@ Module(
                 col_offset=35,
                 end_lineno=42,
                 end_col_offset=43)],
-            [],
             lineno=42,
             col_offset=21,
             end_lineno=42,
@@ -319,7 +310,6 @@ Module(
                 col_offset=35,
                 end_lineno=43,
                 end_col_offset=43)],
-            [],
             lineno=43,
             col_offset=21,
             end_lineno=43,
@@ -472,7 +462,6 @@ Module(
           col_offset=4,
           end_lineno=54,
           end_col_offset=17)],
-      [],
       lineno=31,
       col_offset=0,
       end_lineno=54,
@@ -493,10 +482,7 @@ Module(
             lineno=57,
             col_offset=27,
             end_lineno=57,
-            end_col_offset=35)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=35)]),
       [
         Expr(
           Constant(
@@ -562,7 +548,6 @@ Module(
                   col_offset=62,
                   end_lineno=68,
                   end_col_offset=70)],
-              [],
               lineno=68,
               col_offset=48,
               end_lineno=68,
@@ -628,7 +613,6 @@ Module(
                   col_offset=62,
                   end_lineno=69,
                   end_col_offset=70)],
-              [],
               lineno=69,
               col_offset=48,
               end_lineno=69,
@@ -729,7 +713,6 @@ Module(
           col_offset=4,
           end_lineno=73,
           end_col_offset=20)],
-      [],
       lineno=57,
       col_offset=0,
       end_lineno=73,
@@ -750,10 +733,7 @@ Module(
             lineno=76,
             col_offset=27,
             end_lineno=76,
-            end_col_offset=35)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=35)]),
       [
         Expr(
           Constant(
@@ -839,7 +819,6 @@ Module(
                           col_offset=67,
                           end_lineno=87,
                           end_col_offset=75)],
-                      [],
                       lineno=87,
                       col_offset=53,
                       end_lineno=87,
@@ -874,7 +853,6 @@ Module(
                           col_offset=100,
                           end_lineno=87,
                           end_col_offset=108)],
-                      [],
                       lineno=87,
                       col_offset=86,
                       end_lineno=87,
@@ -904,7 +882,6 @@ Module(
           col_offset=4,
           end_lineno=87,
           end_col_offset=116)],
-      [],
       lineno=76,
       col_offset=0,
       end_lineno=87,
@@ -925,10 +902,7 @@ Module(
             lineno=90,
             col_offset=30,
             end_lineno=90,
-            end_col_offset=38)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=38)]),
       [
         Expr(
           Constant(
@@ -959,7 +933,6 @@ Module(
                   col_offset=25,
                   end_lineno=97,
                   end_col_offset=33)],
-              [],
               lineno=97,
               col_offset=11,
               end_lineno=97,
@@ -983,7 +956,6 @@ Module(
                     col_offset=52,
                     end_lineno=97,
                     end_col_offset=60)],
-                [],
                 lineno=97,
                 col_offset=38,
                 end_lineno=97,
@@ -996,7 +968,6 @@ Module(
           col_offset=4,
           end_lineno=97,
           end_col_offset=61)],
-      [],
       lineno=90,
       col_offset=0,
       end_lineno=97,
@@ -1017,10 +988,7 @@ Module(
             lineno=100,
             col_offset=30,
             end_lineno=100,
-            end_col_offset=38)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=38)]),
       [
         Expr(
           Constant(
@@ -1062,7 +1030,6 @@ Module(
                       col_offset=29,
                       end_lineno=107,
                       end_col_offset=37)],
-                  [],
                   lineno=107,
                   col_offset=15,
                   end_lineno=107,
@@ -1084,7 +1051,6 @@ Module(
                       col_offset=55,
                       end_lineno=107,
                       end_col_offset=63)],
-                  [],
                   lineno=107,
                   col_offset=41,
                   end_lineno=107,
@@ -1107,12 +1073,10 @@ Module(
           col_offset=4,
           end_lineno=107,
           end_col_offset=69)],
-      [],
       lineno=100,
       col_offset=0,
       end_lineno=107,
-      end_col_offset=69)],
-  [])
+      end_col_offset=69)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -1128,10 +1092,7 @@ Module(
             lineno=8,
             col_offset=18,
             end_lineno=8,
-            end_col_offset=22)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=22)]),
       [
         If(
           Compare(
@@ -1244,7 +1205,6 @@ Module(
                         col_offset=20,
                         end_lineno=26,
                         end_col_offset=24)],
-                    [],
                     lineno=26,
                     col_offset=16,
                     end_lineno=26,
@@ -1273,7 +1233,6 @@ Module(
           col_offset=4,
           end_lineno=28,
           end_col_offset=16)],
-      [],
       lineno=8,
       col_offset=0,
       end_lineno=28,
@@ -1294,10 +1253,7 @@ Module(
             lineno=31,
             col_offset=26,
             end_lineno=31,
-            end_col_offset=34)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=34)]),
       [
         Assign(
           [
@@ -1324,7 +1280,6 @@ Module(
                 col_offset=35,
                 end_lineno=42,
                 end_col_offset=43)],
-            [],
             lineno=42,
             col_offset=21,
             end_lineno=42,
@@ -1358,7 +1313,6 @@ Module(
                 col_offset=35,
                 end_lineno=43,
                 end_col_offset=43)],
-            [],
             lineno=43,
             col_offset=21,
             end_lineno=43,
@@ -1511,7 +1465,6 @@ Module(
           col_offset=4,
           end_lineno=54,
           end_col_offset=17)],
-      [],
       lineno=31,
       col_offset=0,
       end_lineno=54,
@@ -1532,10 +1485,7 @@ Module(
             lineno=57,
             col_offset=27,
             end_lineno=57,
-            end_col_offset=35)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=35)]),
       [
         Assign(
           [
@@ -1590,7 +1540,6 @@ Module(
                   col_offset=62,
                   end_lineno=68,
                   end_col_offset=70)],
-              [],
               lineno=68,
               col_offset=48,
               end_lineno=68,
@@ -1656,7 +1605,6 @@ Module(
                   col_offset=62,
                   end_lineno=69,
                   end_col_offset=70)],
-              [],
               lineno=69,
               col_offset=48,
               end_lineno=69,
@@ -1757,7 +1705,6 @@ Module(
           col_offset=4,
           end_lineno=73,
           end_col_offset=20)],
-      [],
       lineno=57,
       col_offset=0,
       end_lineno=73,
@@ -1778,10 +1725,7 @@ Module(
             lineno=76,
             col_offset=27,
             end_lineno=76,
-            end_col_offset=35)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=35)]),
       [
         Return(
           BoolOp(
@@ -1856,7 +1800,6 @@ Module(
                           col_offset=67,
                           end_lineno=87,
                           end_col_offset=75)],
-                      [],
                       lineno=87,
                       col_offset=53,
                       end_lineno=87,
@@ -1891,7 +1834,6 @@ Module(
                           col_offset=100,
                           end_lineno=87,
                           end_col_offset=108)],
-                      [],
                       lineno=87,
                       col_offset=86,
                       end_lineno=87,
@@ -1921,7 +1863,6 @@ Module(
           col_offset=4,
           end_lineno=87,
           end_col_offset=116)],
-      [],
       lineno=76,
       col_offset=0,
       end_lineno=87,
@@ -1942,10 +1883,7 @@ Module(
             lineno=90,
             col_offset=30,
             end_lineno=90,
-            end_col_offset=38)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=38)]),
       [
         Return(
           Compare(
@@ -1965,7 +1903,6 @@ Module(
                   col_offset=25,
                   end_lineno=97,
                   end_col_offset=33)],
-              [],
               lineno=97,
               col_offset=11,
               end_lineno=97,
@@ -1989,7 +1926,6 @@ Module(
                     col_offset=52,
                     end_lineno=97,
                     end_col_offset=60)],
-                [],
                 lineno=97,
                 col_offset=38,
                 end_lineno=97,
@@ -2002,7 +1938,6 @@ Module(
           col_offset=4,
           end_lineno=97,
           end_col_offset=61)],
-      [],
       lineno=90,
       col_offset=0,
       end_lineno=97,
@@ -2023,10 +1958,7 @@ Module(
             lineno=100,
             col_offset=30,
             end_lineno=100,
-            end_col_offset=38)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=38)]),
       [
         Return(
           Compare(
@@ -2057,7 +1989,6 @@ Module(
                       col_offset=29,
                       end_lineno=107,
                       end_col_offset=37)],
-                  [],
                   lineno=107,
                   col_offset=15,
                   end_lineno=107,
@@ -2079,7 +2010,6 @@ Module(
                       col_offset=55,
                       end_lineno=107,
                       end_col_offset=63)],
-                  [],
                   lineno=107,
                   col_offset=41,
                   end_lineno=107,
@@ -2102,10 +2032,8 @@ Module(
           col_offset=4,
           end_lineno=107,
           end_col_offset=69)],
-      [],
       lineno=100,
       col_offset=0,
       end_lineno=107,
-      end_col_offset=69)],
-  [])
+      end_col_offset=69)])
 ## END NORMALIZED TREE ##

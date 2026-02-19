@@ -16,7 +16,7 @@ on:
       - "**.md"
 jobs:
   test:
-    name: Test Representer
+    name: Test Python Representer
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout code
@@ -37,5 +37,5 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      - name: Run Tests in Docker
+      - name: Run Tests for Python Representer in Docker
         run: bin/run-tests-in-docker.sh

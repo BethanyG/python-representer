@@ -101,10 +101,7 @@ Module(
             lineno=6,
             col_offset=8,
             end_lineno=6,
-            end_col_offset=37)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=37)]),
       [
         Expr(
           Constant(
@@ -299,10 +296,7 @@ Module(
             lineno=26,
             col_offset=8,
             end_lineno=26,
-            end_col_offset=42)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=42)]),
       [
         Expr(
           Constant(
@@ -454,7 +448,6 @@ Module(
               col_offset=8,
               end_lineno=51,
               end_col_offset=22)],
-          [],
           lineno=50,
           col_offset=4,
           end_lineno=51,
@@ -493,7 +486,6 @@ Module(
               col_offset=8,
               end_lineno=53,
               end_col_offset=23)],
-          [],
           lineno=52,
           col_offset=4,
           end_lineno=53,
@@ -538,7 +530,6 @@ Module(
                     col_offset=14,
                     end_lineno=55,
                     end_col_offset=24)],
-                [],
                 lineno=55,
                 col_offset=8,
                 end_lineno=55,
@@ -558,7 +549,6 @@ Module(
               col_offset=8,
               end_lineno=56,
               end_col_offset=20)],
-          [],
           lineno=54,
           col_offset=4,
           end_lineno=56,
@@ -668,10 +658,7 @@ Module(
             lineno=63,
             col_offset=8,
             end_lineno=63,
-            end_col_offset=30)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=30)]),
       [
         Expr(
           Constant(
@@ -885,8 +872,7 @@ Module(
       lineno=60,
       col_offset=0,
       end_lineno=84,
-      end_col_offset=27)],
-  [])
+      end_col_offset=27)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -908,10 +894,7 @@ Module(
             lineno=6,
             col_offset=8,
             end_lineno=6,
-            end_col_offset=37)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=37)]),
       [
         Return(
           BoolOp(
@@ -1001,7 +984,6 @@ Module(
           col_offset=4,
           end_lineno=20,
           end_col_offset=104)],
-      [],
       lineno=4,
       col_offset=0,
       end_lineno=20,
@@ -1028,10 +1010,7 @@ Module(
             lineno=26,
             col_offset=8,
             end_lineno=26,
-            end_col_offset=42)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=42)]),
       [
         Assign(
           [
@@ -1139,7 +1118,6 @@ Module(
               col_offset=8,
               end_lineno=51,
               end_col_offset=22)],
-          [],
           lineno=50,
           col_offset=4,
           end_lineno=51,
@@ -1178,7 +1156,6 @@ Module(
               col_offset=8,
               end_lineno=53,
               end_col_offset=23)],
-          [],
           lineno=52,
           col_offset=4,
           end_lineno=53,
@@ -1217,7 +1194,6 @@ Module(
               col_offset=8,
               end_lineno=56,
               end_col_offset=20)],
-          [],
           lineno=54,
           col_offset=4,
           end_lineno=56,
@@ -1233,7 +1209,6 @@ Module(
           col_offset=4,
           end_lineno=57,
           end_col_offset=18)],
-      [],
       lineno=23,
       col_offset=0,
       end_lineno=57,
@@ -1260,10 +1235,7 @@ Module(
             lineno=63,
             col_offset=8,
             end_lineno=63,
-            end_col_offset=30)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=30)]),
       [
         Assign(
           [
@@ -1432,10 +1404,8 @@ Module(
           col_offset=4,
           end_lineno=84,
           end_col_offset=27)],
-      [],
       lineno=60,
       col_offset=0,
       end_lineno=84,
-      end_col_offset=27)],
-  [])
+      end_col_offset=27)])
 ## END NORMALIZED TREE ##

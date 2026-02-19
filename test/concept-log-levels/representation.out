@@ -240,7 +240,6 @@ Module(
           col_offset=4,
           end_lineno=14,
           end_col_offset=19)],
-      [],
       lineno=4,
       col_offset=0,
       end_lineno=14,
@@ -420,7 +419,6 @@ Module(
           col_offset=4,
           end_lineno=27,
           end_col_offset=16)],
-      [],
       lineno=17,
       col_offset=0,
       end_lineno=27,
@@ -435,10 +433,7 @@ Module(
             lineno=30,
             col_offset=20,
             end_lineno=30,
-            end_col_offset=27)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=27)]),
       [
         Expr(
           Constant(
@@ -482,7 +477,6 @@ Module(
                 col_offset=30,
                 end_lineno=37,
                 end_col_offset=33)],
-            [],
             lineno=37,
             col_offset=16,
             end_lineno=37,
@@ -623,7 +617,6 @@ Module(
                     col_offset=24,
                     end_lineno=40,
                     end_col_offset=27)],
-                [],
                 lineno=40,
                 col_offset=15,
                 end_lineno=40,
@@ -632,7 +625,6 @@ Module(
               col_offset=8,
               end_lineno=40,
               end_col_offset=28)],
-          [],
           lineno=39,
           col_offset=4,
           end_lineno=40,
@@ -653,7 +645,6 @@ Module(
                 col_offset=20,
                 end_lineno=41,
                 end_col_offset=25)],
-            [],
             lineno=41,
             col_offset=11,
             end_lineno=41,
@@ -662,7 +653,6 @@ Module(
           col_offset=4,
           end_lineno=41,
           end_col_offset=26)],
-      [],
       lineno=30,
       col_offset=0,
       end_lineno=41,
@@ -683,10 +673,7 @@ Module(
             lineno=44,
             col_offset=36,
             end_lineno=44,
-            end_col_offset=43)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=43)]),
       [
         Expr(
           Constant(
@@ -739,15 +726,15 @@ Module(
                   end_col_offset=47),
                 -1,
                 lineno=52,
-                col_offset=11,
+                col_offset=13,
                 end_lineno=52,
-                end_col_offset=59),
+                end_col_offset=48),
               Constant(
                 ':',
                 lineno=52,
-                col_offset=11,
+                col_offset=48,
                 end_lineno=52,
-                end_col_offset=59),
+                end_col_offset=49),
               FormattedValue(
                 Name(
                   'message',
@@ -758,9 +745,9 @@ Module(
                   end_col_offset=57),
                 -1,
                 lineno=52,
-                col_offset=11,
+                col_offset=49,
                 end_lineno=52,
-                end_col_offset=59)],
+                end_col_offset=58)],
             lineno=52,
             col_offset=11,
             end_lineno=52,
@@ -769,19 +756,13 @@ Module(
           col_offset=4,
           end_lineno=52,
           end_col_offset=59)],
-      [],
       lineno=44,
       col_offset=0,
       end_lineno=52,
       end_col_offset=59),
     FunctionDef(
       'get_warn_alias',
-      arguments(
-        [],
-        [],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+      arguments(),
       [
         Expr(
           Constant(
@@ -810,7 +791,6 @@ Module(
                 col_offset=20,
                 end_lineno=61,
                 end_col_offset=25)],
-            [],
             lineno=61,
             col_offset=11,
             end_lineno=61,
@@ -819,19 +799,13 @@ Module(
           col_offset=4,
           end_lineno=61,
           end_col_offset=26)],
-      [],
       lineno=55,
       col_offset=0,
       end_lineno=61,
       end_col_offset=26),
     FunctionDef(
       'get_members',
-      arguments(
-        [],
-        [],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+      arguments(),
       [
         Expr(
           Constant(
@@ -932,7 +906,6 @@ Module(
                     col_offset=24,
                     end_lineno=72,
                     end_col_offset=51)],
-                [],
                 lineno=72,
                 col_offset=8,
                 end_lineno=72,
@@ -941,7 +914,6 @@ Module(
               col_offset=8,
               end_lineno=72,
               end_col_offset=52)],
-          [],
           lineno=71,
           col_offset=4,
           end_lineno=72,
@@ -958,12 +930,10 @@ Module(
           col_offset=4,
           end_lineno=73,
           end_col_offset=19)],
-      [],
       lineno=64,
       col_offset=0,
       end_lineno=73,
-      end_col_offset=19)],
-  [])
+      end_col_offset=19)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -1147,7 +1117,6 @@ Module(
           col_offset=4,
           end_lineno=14,
           end_col_offset=19)],
-      [],
       lineno=4,
       col_offset=0,
       end_lineno=14,
@@ -1316,7 +1285,6 @@ Module(
           col_offset=4,
           end_lineno=27,
           end_col_offset=16)],
-      [],
       lineno=17,
       col_offset=0,
       end_lineno=27,
@@ -1331,10 +1299,7 @@ Module(
             lineno=30,
             col_offset=20,
             end_lineno=30,
-            end_col_offset=27)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=27)]),
       [
         Assign(
           [
@@ -1367,7 +1332,6 @@ Module(
                 col_offset=30,
                 end_lineno=37,
                 end_col_offset=33)],
-            [],
             lineno=37,
             col_offset=16,
             end_lineno=37,
@@ -1508,7 +1472,6 @@ Module(
                     col_offset=24,
                     end_lineno=40,
                     end_col_offset=27)],
-                [],
                 lineno=40,
                 col_offset=15,
                 end_lineno=40,
@@ -1517,7 +1480,6 @@ Module(
               col_offset=8,
               end_lineno=40,
               end_col_offset=28)],
-          [],
           lineno=39,
           col_offset=4,
           end_lineno=40,
@@ -1538,7 +1500,6 @@ Module(
                 col_offset=20,
                 end_lineno=41,
                 end_col_offset=25)],
-            [],
             lineno=41,
             col_offset=11,
             end_lineno=41,
@@ -1547,7 +1508,6 @@ Module(
           col_offset=4,
           end_lineno=41,
           end_col_offset=26)],
-      [],
       lineno=30,
       col_offset=0,
       end_lineno=41,
@@ -1568,10 +1528,7 @@ Module(
             lineno=44,
             col_offset=36,
             end_lineno=44,
-            end_col_offset=43)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=43)]),
       [
         Return(
           JoinedStr(
@@ -1613,15 +1570,15 @@ Module(
                   end_col_offset=47),
                 -1,
                 lineno=52,
-                col_offset=11,
+                col_offset=13,
                 end_lineno=52,
-                end_col_offset=59),
+                end_col_offset=48),
               Constant(
                 ':',
                 lineno=52,
-                col_offset=11,
+                col_offset=48,
                 end_lineno=52,
-                end_col_offset=59),
+                end_col_offset=49),
               FormattedValue(
                 Name(
                   'placeholder_11',
@@ -1632,9 +1589,9 @@ Module(
                   end_col_offset=57),
                 -1,
                 lineno=52,
-                col_offset=11,
+                col_offset=49,
                 end_lineno=52,
-                end_col_offset=59)],
+                end_col_offset=58)],
             lineno=52,
             col_offset=11,
             end_lineno=52,
@@ -1643,19 +1600,13 @@ Module(
           col_offset=4,
           end_lineno=52,
           end_col_offset=59)],
-      [],
       lineno=44,
       col_offset=0,
       end_lineno=52,
       end_col_offset=59),
     FunctionDef(
       'placeholder_17',
-      arguments(
-        [],
-        [],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+      arguments(),
       [
         Return(
           Call(
@@ -1673,7 +1624,6 @@ Module(
                 col_offset=20,
                 end_lineno=61,
                 end_col_offset=25)],
-            [],
             lineno=61,
             col_offset=11,
             end_lineno=61,
@@ -1682,19 +1632,13 @@ Module(
           col_offset=4,
           end_lineno=61,
           end_col_offset=26)],
-      [],
       lineno=55,
       col_offset=0,
       end_lineno=61,
       end_col_offset=26),
     FunctionDef(
       'placeholder_18',
-      arguments(
-        [],
-        [],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+      arguments(),
       [
         Assign(
           [
@@ -1784,7 +1728,6 @@ Module(
                     col_offset=24,
                     end_lineno=72,
                     end_col_offset=51)],
-                [],
                 lineno=72,
                 col_offset=8,
                 end_lineno=72,
@@ -1793,7 +1736,6 @@ Module(
               col_offset=8,
               end_lineno=72,
               end_col_offset=52)],
-          [],
           lineno=71,
           col_offset=4,
           end_lineno=72,
@@ -1810,10 +1752,8 @@ Module(
           col_offset=4,
           end_lineno=73,
           end_col_offset=19)],
-      [],
       lineno=64,
       col_offset=0,
       end_lineno=73,
-      end_col_offset=19)],
-  [])
+      end_col_offset=19)])
 ## END NORMALIZED TREE ##

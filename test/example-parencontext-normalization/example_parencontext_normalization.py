@@ -1,11 +1,8 @@
 """Examples of Parenthesized Context Managers. New feature in Python 3.10"""
 
 
-
 # This example shows parens around a `localcontext` context mangers.
 # Uses two styles of parens.
-"""Calculate the fixed interest rate."""
-
 from decimal import ROUND_DOWN, ROUND_UP, Decimal, localcontext
 import pandas as pd
 
@@ -25,6 +22,7 @@ def calc_fixed_rate(spot_price: pd.Series, position_duration: Decimal) -> pd.Ser
     pd.Series
         The fixed interest rate.
     """
+
     # Position duration (in seconds) in terms of fraction of year
     # This div should round up
     # This replicates div up in fixed point
@@ -44,17 +42,14 @@ def calc_fixed_rate(spot_price: pd.Series, position_duration: Decimal) -> pd.Ser
     return fixed_rate
 
 
-
-
-
 # This example shows a CLI that opens two files with context managers that are grouped by parens.
 #!/usr/bin/python3
-"""convert json to jsonl"""
-
 from argparse import ArgumentParser
 import json
 
+
 def main():
+    """convert json to jsonl"""
     args = parse_args()
 
     # Context Mgrs

@@ -47,6 +47,10 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
+# Legacy test directories
+test/*/OLD_output
+test/*/rerun
+
 # Translations
 *.mo
 *.pot
@@ -102,3 +106,8 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# mac directory files
+.DS_Store
+test/.DS_Store
+*/.DS_Store

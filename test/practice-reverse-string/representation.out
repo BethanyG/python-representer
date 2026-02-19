@@ -18,8 +18,6 @@ Module(
             col_offset=12,
             end_lineno=1,
             end_col_offset=16)],
-        kwonlyargs=[],
-        kw_defaults=[],
         defaults=[
           Constant(
             '',
@@ -63,12 +61,10 @@ Module(
           col_offset=4,
           end_lineno=2,
           end_col_offset=21)],
-      [],
       lineno=1,
       col_offset=0,
       end_lineno=2,
-      end_col_offset=21)],
-  [])
+      end_col_offset=21)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -85,8 +81,6 @@ Module(
             col_offset=12,
             end_lineno=1,
             end_col_offset=16)],
-        kwonlyargs=[],
-        kw_defaults=[],
         defaults=[
           Constant(
             '',
@@ -130,10 +124,8 @@ Module(
           col_offset=4,
           end_lineno=2,
           end_col_offset=21)],
-      [],
       lineno=1,
       col_offset=0,
       end_lineno=2,
-      end_col_offset=21)],
-  [])
+      end_col_offset=21)])
 ## END NORMALIZED TREE ##

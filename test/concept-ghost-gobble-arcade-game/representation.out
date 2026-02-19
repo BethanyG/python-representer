@@ -46,10 +46,7 @@ Module(
             lineno=4,
             col_offset=35,
             end_lineno=4,
-            end_col_offset=49)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=49)]),
       [
         Expr(
           Constant(
@@ -88,7 +85,6 @@ Module(
           col_offset=4,
           end_lineno=12,
           end_col_offset=49)],
-      [],
       lineno=4,
       col_offset=0,
       end_lineno=12,
@@ -109,10 +105,7 @@ Module(
             lineno=15,
             col_offset=33,
             end_lineno=15,
-            end_col_offset=45)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=45)]),
       [
         Expr(
           Constant(
@@ -151,7 +144,6 @@ Module(
           col_offset=4,
           end_lineno=23,
           end_col_offset=48)],
-      [],
       lineno=15,
       col_offset=0,
       end_lineno=23,
@@ -172,10 +164,7 @@ Module(
             lineno=26,
             col_offset=30,
             end_lineno=26,
-            end_col_offset=44)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=44)]),
       [
         Expr(
           Constant(
@@ -220,7 +209,6 @@ Module(
           col_offset=4,
           end_lineno=34,
           end_col_offset=53)],
-      [],
       lineno=26,
       col_offset=0,
       end_lineno=34,
@@ -247,10 +235,7 @@ Module(
             lineno=37,
             col_offset=49,
             end_lineno=37,
-            end_col_offset=63)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=63)]),
       [
         Expr(
           Constant(
@@ -299,7 +284,6 @@ Module(
                       col_offset=64,
                       end_lineno=46,
                       end_col_offset=78)],
-                  [],
                   lineno=46,
                   col_offset=38,
                   end_lineno=46,
@@ -316,12 +300,10 @@ Module(
           col_offset=4,
           end_lineno=46,
           end_col_offset=79)],
-      [],
       lineno=37,
       col_offset=0,
       end_lineno=46,
-      end_col_offset=79)],
-  [])
+      end_col_offset=79)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -343,10 +325,7 @@ Module(
             lineno=4,
             col_offset=35,
             end_lineno=4,
-            end_col_offset=49)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=49)]),
       [
         Return(
           BoolOp(
@@ -374,7 +353,6 @@ Module(
           col_offset=4,
           end_lineno=12,
           end_col_offset=49)],
-      [],
       lineno=4,
       col_offset=0,
       end_lineno=12,
@@ -395,10 +373,7 @@ Module(
             lineno=15,
             col_offset=33,
             end_lineno=15,
-            end_col_offset=45)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=45)]),
       [
         Return(
           BoolOp(
@@ -426,7 +401,6 @@ Module(
           col_offset=4,
           end_lineno=23,
           end_col_offset=48)],
-      [],
       lineno=15,
       col_offset=0,
       end_lineno=23,
@@ -447,10 +421,7 @@ Module(
             lineno=26,
             col_offset=30,
             end_lineno=26,
-            end_col_offset=44)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=44)]),
       [
         Return(
           BoolOp(
@@ -484,7 +455,6 @@ Module(
           col_offset=4,
           end_lineno=34,
           end_col_offset=53)],
-      [],
       lineno=26,
       col_offset=0,
       end_lineno=34,
@@ -511,10 +481,7 @@ Module(
             lineno=37,
             col_offset=49,
             end_lineno=37,
-            end_col_offset=63)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=63)]),
       [
         Return(
           BoolOp(
@@ -552,7 +519,6 @@ Module(
                       col_offset=64,
                       end_lineno=46,
                       end_col_offset=78)],
-                  [],
                   lineno=46,
                   col_offset=38,
                   end_lineno=46,
@@ -569,10 +535,8 @@ Module(
           col_offset=4,
           end_lineno=46,
           end_col_offset=79)],
-      [],
       lineno=37,
       col_offset=0,
       end_lineno=46,
-      end_col_offset=79)],
-  [])
+      end_col_offset=79)])
 ## END NORMALIZED TREE ##

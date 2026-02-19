@@ -249,10 +249,7 @@ Module(
             lineno=18,
             col_offset=10,
             end_lineno=18,
-            end_col_offset=20)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=20)]),
       [
         Assign(
           [
@@ -316,7 +313,6 @@ Module(
                   col_offset=11,
                   end_lineno=21,
                   end_col_offset=16)],
-              [],
               lineno=21,
               col_offset=7,
               end_lineno=21,
@@ -414,7 +410,6 @@ Module(
                         col_offset=32,
                         end_lineno=22,
                         end_col_offset=42)],
-                    [],
                     lineno=22,
                     col_offset=22,
                     end_lineno=22,
@@ -428,7 +423,6 @@ Module(
               col_offset=8,
               end_lineno=22,
               end_col_offset=44)],
-          [],
           lineno=21,
           col_offset=4,
           end_lineno=22,
@@ -464,7 +458,6 @@ Module(
                 col_offset=26,
                 end_lineno=24,
                 end_col_offset=31)],
-            [],
             lineno=24,
             col_offset=12,
             end_lineno=24,
@@ -479,9 +472,9 @@ Module(
               Constant(
                 'On the ',
                 lineno=25,
-                col_offset=11,
+                col_offset=13,
                 end_lineno=25,
-                end_col_offset=93),
+                end_col_offset=20),
               FormattedValue(
                 Subscript(
                   Name(
@@ -505,15 +498,15 @@ Module(
                   end_col_offset=40),
                 -1,
                 lineno=25,
-                col_offset=11,
+                col_offset=20,
                 end_lineno=25,
-                end_col_offset=93),
+                end_col_offset=41),
               Constant(
                 ' day of Christmas my true love gave to me: ',
                 lineno=25,
-                col_offset=11,
+                col_offset=41,
                 end_lineno=25,
-                end_col_offset=93),
+                end_col_offset=84),
               FormattedValue(
                 Name(
                   'gifts',
@@ -524,15 +517,15 @@ Module(
                   end_col_offset=90),
                 -1,
                 lineno=25,
-                col_offset=11,
+                col_offset=84,
                 end_lineno=25,
-                end_col_offset=93),
+                end_col_offset=91),
               Constant(
                 '.',
                 lineno=25,
-                col_offset=11,
+                col_offset=91,
                 end_lineno=25,
-                end_col_offset=93)],
+                end_col_offset=92)],
             lineno=25,
             col_offset=11,
             end_lineno=25,
@@ -541,7 +534,6 @@ Module(
           col_offset=4,
           end_lineno=25,
           end_col_offset=93)],
-      [],
       lineno=18,
       col_offset=0,
       end_lineno=25,
@@ -562,10 +554,7 @@ Module(
             lineno=28,
             col_offset=18,
             end_lineno=28,
-            end_col_offset=21)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=21)]),
       [
         Return(
           ListComp(
@@ -585,7 +574,6 @@ Module(
                   col_offset=18,
                   end_lineno=29,
                   end_col_offset=24)],
-              [],
               lineno=29,
               col_offset=12,
               end_lineno=29,
@@ -634,7 +622,6 @@ Module(
                       col_offset=53,
                       end_lineno=29,
                       end_col_offset=60)],
-                  [],
                   lineno=29,
                   col_offset=40,
                   end_lineno=29,
@@ -649,12 +636,10 @@ Module(
           col_offset=4,
           end_lineno=29,
           end_col_offset=62)],
-      [],
       lineno=28,
       col_offset=0,
       end_lineno=29,
-      end_col_offset=62)],
-  [])
+      end_col_offset=62)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -860,10 +845,7 @@ Module(
             lineno=18,
             col_offset=10,
             end_lineno=18,
-            end_col_offset=20)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=20)]),
       [
         Assign(
           [
@@ -927,7 +909,6 @@ Module(
                   col_offset=11,
                   end_lineno=21,
                   end_col_offset=16)],
-              [],
               lineno=21,
               col_offset=7,
               end_lineno=21,
@@ -1025,7 +1006,6 @@ Module(
                         col_offset=32,
                         end_lineno=22,
                         end_col_offset=42)],
-                    [],
                     lineno=22,
                     col_offset=22,
                     end_lineno=22,
@@ -1039,7 +1019,6 @@ Module(
               col_offset=8,
               end_lineno=22,
               end_col_offset=44)],
-          [],
           lineno=21,
           col_offset=4,
           end_lineno=22,
@@ -1075,7 +1054,6 @@ Module(
                 col_offset=26,
                 end_lineno=24,
                 end_col_offset=31)],
-            [],
             lineno=24,
             col_offset=12,
             end_lineno=24,
@@ -1090,9 +1068,9 @@ Module(
               Constant(
                 'On the ',
                 lineno=25,
-                col_offset=11,
+                col_offset=13,
                 end_lineno=25,
-                end_col_offset=93),
+                end_col_offset=20),
               FormattedValue(
                 Subscript(
                   Name(
@@ -1116,15 +1094,15 @@ Module(
                   end_col_offset=40),
                 -1,
                 lineno=25,
-                col_offset=11,
+                col_offset=20,
                 end_lineno=25,
-                end_col_offset=93),
+                end_col_offset=41),
               Constant(
                 ' day of Christmas my true love gave to me: ',
                 lineno=25,
-                col_offset=11,
+                col_offset=41,
                 end_lineno=25,
-                end_col_offset=93),
+                end_col_offset=84),
               FormattedValue(
                 Name(
                   'placeholder_4',
@@ -1135,15 +1113,15 @@ Module(
                   end_col_offset=90),
                 -1,
                 lineno=25,
-                col_offset=11,
+                col_offset=84,
                 end_lineno=25,
-                end_col_offset=93),
+                end_col_offset=91),
               Constant(
                 '.',
                 lineno=25,
-                col_offset=11,
+                col_offset=91,
                 end_lineno=25,
-                end_col_offset=93)],
+                end_col_offset=92)],
             lineno=25,
             col_offset=11,
             end_lineno=25,
@@ -1152,7 +1130,6 @@ Module(
           col_offset=4,
           end_lineno=25,
           end_col_offset=93)],
-      [],
       lineno=18,
       col_offset=0,
       end_lineno=25,
@@ -1173,10 +1150,7 @@ Module(
             lineno=28,
             col_offset=18,
             end_lineno=28,
-            end_col_offset=21)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=21)]),
       [
         Return(
           ListComp(
@@ -1196,7 +1170,6 @@ Module(
                   col_offset=18,
                   end_lineno=29,
                   end_col_offset=24)],
-              [],
               lineno=29,
               col_offset=12,
               end_lineno=29,
@@ -1245,7 +1218,6 @@ Module(
                       col_offset=53,
                       end_lineno=29,
                       end_col_offset=60)],
-                  [],
                   lineno=29,
                   col_offset=40,
                   end_lineno=29,
@@ -1260,10 +1232,8 @@ Module(
           col_offset=4,
           end_lineno=29,
           end_col_offset=62)],
-      [],
       lineno=28,
       col_offset=0,
       end_lineno=29,
-      end_col_offset=62)],
-  [])
+      end_col_offset=62)])
 ## END NORMALIZED TREE ##

@@ -1,5 +1,6 @@
 ## BEGIN NORMALIZED CODE ##
 class placeholder_0:
+
     def placeholder_1(self, placeholder_2):
         self.placeholder_2 = placeholder_2
 
@@ -38,10 +39,7 @@ Module(
                 lineno=2,
                 col_offset=23,
                 end_lineno=2,
-                end_col_offset=29)],
-            kwonlyargs=[],
-            kw_defaults=[],
-            defaults=[]),
+                end_col_offset=29)]),
           [
             Assign(
               [
@@ -70,7 +68,6 @@ Module(
               col_offset=8,
               end_lineno=3,
               end_col_offset=28)],
-          [],
           lineno=2,
           col_offset=4,
           end_lineno=3,
@@ -85,10 +82,7 @@ Module(
                 lineno=5,
                 col_offset=15,
                 end_lineno=5,
-                end_col_offset=19)],
-            kwonlyargs=[],
-            kw_defaults=[],
-            defaults=[]),
+                end_col_offset=19)]),
           [
             Return(
               Subscript(
@@ -127,7 +121,6 @@ Module(
               col_offset=8,
               end_lineno=6,
               end_col_offset=30)],
-          [],
           lineno=5,
           col_offset=4,
           end_lineno=6,
@@ -142,10 +135,7 @@ Module(
                 lineno=8,
                 col_offset=22,
                 end_lineno=8,
-                end_col_offset=26)],
-            kwonlyargs=[],
-            kw_defaults=[],
-            defaults=[]),
+                end_col_offset=26)]),
           [
             Return(
               Call(
@@ -171,7 +161,6 @@ Module(
                     col_offset=19,
                     end_lineno=9,
                     end_col_offset=30)],
-                [],
                 lineno=9,
                 col_offset=15,
                 end_lineno=9,
@@ -180,7 +169,6 @@ Module(
               col_offset=8,
               end_lineno=9,
               end_col_offset=31)],
-          [],
           lineno=8,
           col_offset=4,
           end_lineno=9,
@@ -195,10 +183,7 @@ Module(
                 lineno=11,
                 col_offset=27,
                 end_lineno=11,
-                end_col_offset=31)],
-            kwonlyargs=[],
-            kw_defaults=[],
-            defaults=[]),
+                end_col_offset=31)]),
           [
             Return(
               Subscript(
@@ -262,17 +247,14 @@ Module(
               col_offset=8,
               end_lineno=12,
               end_col_offset=52)],
-          [],
           lineno=11,
           col_offset=4,
           end_lineno=12,
           end_col_offset=52)],
-      [],
       lineno=1,
       col_offset=0,
       end_lineno=12,
-      end_col_offset=52)],
-  [])
+      end_col_offset=52)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -299,10 +281,7 @@ Module(
                 lineno=2,
                 col_offset=23,
                 end_lineno=2,
-                end_col_offset=29)],
-            kwonlyargs=[],
-            kw_defaults=[],
-            defaults=[]),
+                end_col_offset=29)]),
           [
             Assign(
               [
@@ -331,7 +310,6 @@ Module(
               col_offset=8,
               end_lineno=3,
               end_col_offset=28)],
-          [],
           lineno=2,
           col_offset=4,
           end_lineno=3,
@@ -346,10 +324,7 @@ Module(
                 lineno=5,
                 col_offset=15,
                 end_lineno=5,
-                end_col_offset=19)],
-            kwonlyargs=[],
-            kw_defaults=[],
-            defaults=[]),
+                end_col_offset=19)]),
           [
             Return(
               Subscript(
@@ -388,7 +363,6 @@ Module(
               col_offset=8,
               end_lineno=6,
               end_col_offset=30)],
-          [],
           lineno=5,
           col_offset=4,
           end_lineno=6,
@@ -403,10 +377,7 @@ Module(
                 lineno=8,
                 col_offset=22,
                 end_lineno=8,
-                end_col_offset=26)],
-            kwonlyargs=[],
-            kw_defaults=[],
-            defaults=[]),
+                end_col_offset=26)]),
           [
             Return(
               Call(
@@ -432,7 +403,6 @@ Module(
                     col_offset=19,
                     end_lineno=9,
                     end_col_offset=30)],
-                [],
                 lineno=9,
                 col_offset=15,
                 end_lineno=9,
@@ -441,7 +411,6 @@ Module(
               col_offset=8,
               end_lineno=9,
               end_col_offset=31)],
-          [],
           lineno=8,
           col_offset=4,
           end_lineno=9,
@@ -456,10 +425,7 @@ Module(
                 lineno=11,
                 col_offset=27,
                 end_lineno=11,
-                end_col_offset=31)],
-            kwonlyargs=[],
-            kw_defaults=[],
-            defaults=[]),
+                end_col_offset=31)]),
           [
             Return(
               Subscript(
@@ -523,15 +489,12 @@ Module(
               col_offset=8,
               end_lineno=12,
               end_col_offset=52)],
-          [],
           lineno=11,
           col_offset=4,
           end_lineno=12,
           end_col_offset=52)],
-      [],
       lineno=1,
       col_offset=0,
       end_lineno=12,
-      end_col_offset=52)],
-  [])
+      end_col_offset=52)])
 ## END NORMALIZED TREE ##

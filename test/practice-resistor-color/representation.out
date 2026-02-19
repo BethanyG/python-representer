@@ -115,10 +115,7 @@ Module(
             lineno=15,
             col_offset=15,
             end_lineno=15,
-            end_col_offset=20)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=20)]),
       [
         Return(
           Call(
@@ -144,7 +141,6 @@ Module(
                 col_offset=24,
                 end_lineno=16,
                 end_col_offset=29)],
-            [],
             lineno=16,
             col_offset=11,
             end_lineno=16,
@@ -153,19 +149,13 @@ Module(
           col_offset=4,
           end_lineno=16,
           end_col_offset=30)],
-      [],
       lineno=15,
       col_offset=0,
       end_lineno=16,
       end_col_offset=30),
     FunctionDef(
       'colors',
-      arguments(
-        [],
-        [],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+      arguments(),
       [
         Return(
           Name(
@@ -179,12 +169,10 @@ Module(
           col_offset=4,
           end_lineno=20,
           end_col_offset=17)],
-      [],
       lineno=19,
       col_offset=0,
       end_lineno=20,
-      end_col_offset=17)],
-  [])
+      end_col_offset=17)])
 ## END TREE BEFORE ##
 
 ## BEGIN NORMALIZED TREE ##
@@ -280,10 +268,7 @@ Module(
             lineno=15,
             col_offset=15,
             end_lineno=15,
-            end_col_offset=20)],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+            end_col_offset=20)]),
       [
         Return(
           Call(
@@ -309,7 +294,6 @@ Module(
                 col_offset=24,
                 end_lineno=16,
                 end_col_offset=29)],
-            [],
             lineno=16,
             col_offset=11,
             end_lineno=16,
@@ -318,19 +302,13 @@ Module(
           col_offset=4,
           end_lineno=16,
           end_col_offset=30)],
-      [],
       lineno=15,
       col_offset=0,
       end_lineno=16,
       end_col_offset=30),
     FunctionDef(
       'placeholder_3',
-      arguments(
-        [],
-        [],
-        kwonlyargs=[],
-        kw_defaults=[],
-        defaults=[]),
+      arguments(),
       [
         Return(
           Name(
@@ -344,10 +322,8 @@ Module(
           col_offset=4,
           end_lineno=20,
           end_col_offset=17)],
-      [],
       lineno=19,
       col_offset=0,
       end_lineno=20,
-      end_col_offset=17)],
-  [])
+      end_col_offset=17)])
 ## END NORMALIZED TREE ##
